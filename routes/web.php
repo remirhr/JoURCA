@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\EpreuveResultController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('epreuve_results', EpreuveResultController::class);
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
