@@ -13,7 +13,7 @@ class EpreuveResultController extends Controller
      */
     public function index()
     {
-        $EpreuveList = EpreuveResult::orderBy('title', 'description')->take(7)->get();        
+        $EpreuveList = EpreuveResult::orderBy('id')->take(7)->get();        
         return view('epreuve.list', ['epreuveList' => $EpreuveList]);
     }
 

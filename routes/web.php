@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EpreuveResultController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +14,9 @@ use App\Http\Controllers\EpreuveResultController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::resource('/', EpreuveResultController::class);
+Route::resource('epreuve', EpreuveResultController::class);
 
 Route::resource('epreuve', EpreuveResultController::class);
 Route::middleware([
