@@ -18,19 +18,19 @@
   <div class="mb-3 row">
     <label for="title" class="col-sm-2 col-form-label">Intitulé</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="title" id="title" placeholder="Saisir l'intitulé de l'article" value="{{$epreuve->title}}"/>
+      <input type="text" class="form-control" name="title" id="title" placeholder="Saisir le nom de l'épreuve" value="{{$epreuve->title}}"/>
     </div>
   </div>
   <div class="mb-3 row">
     <label for="description" class="col-sm-2 col-form-label">Contenu</label>
     <div class="col-sm-10">
-      <textarea class="form-control" id="description" name="description" rows="3" placeholder="Saisir la description de l'article">{{$epreuve->description}}</textarea>
+      <textarea class="form-control" id="description" name="description" rows="3" placeholder="Saisir la description de l'épreuve">{{$epreuve->description}}</textarea>
     </div>
   </div>
   <div class="mb-3 row">
     <label for="img" class="col-sm-2 col-form-label">img</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="img" id="img" placeholder="Saisir le prix de l'article" value="{{$epreuve->img}}"/>
+      <input type="text" class="form-control" name="img" id="img" placeholder="Saisir le logo de l'épreuve" value="{{$epreuve->img}}"/>
     </div>
   </div>
   <div class="mb-3">
