@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('epreuve_results', EpreuveResultController::class);
+Route::resource('epreuve', EpreuveResultController::class);
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

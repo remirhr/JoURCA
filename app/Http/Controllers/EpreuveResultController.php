@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreEpreuveRequest;
 use App\Models\EpreuveResult;
 use Illuminate\Http\Request;
 
@@ -13,7 +14,7 @@ class EpreuveResultController extends Controller
     public function index()
     {
         $EpreuveList = EpreuveResult::orderBy('title', 'description')->take(7)->get();        
-        return view('Epreuve.list', ['EpreuveList' => $EpreuveList]);
+        return view('epreuve.list', ['epreuveList' => $EpreuveList]);
     }
 
     /**
@@ -21,7 +22,7 @@ class EpreuveResultController extends Controller
      */
     public function create()
     {
-        //
+        return view('epreuve.create');
     }
 
     /**
@@ -29,7 +30,15 @@ class EpreuveResultController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      
+        $request->validated();
+        $epreuve = EpreuveResult::create($request->input());
+        $epreuve->save();
+
+        return redirect()->route('epreuve.show', ['epreuve' => $epreuve]);
+    
+ 
+
     }
 
     /**
@@ -37,7 +46,7 @@ class EpreuveResultController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('epreuve.show', ['epreuve' => EpreuveResult::findOrFail($id)]);
     }
 
     /**
@@ -45,22 +54,25 @@ class EpreuveResultController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('epreuve.edit', ['epreuve' => EpreuveResult::findOrFail($id)]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
+    public function update(StoreEpreuveRequest $request, EpreuveResult $epreuve)
+{
+    $request->validated();
+    $epreuve->update($request->input());
+    return redirect()->route('epreuve.show', ['epreuve' => $epreuve]);
+}
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
     {
-        //
-    }
+        $epreuve = EpreuveResult::findOrFail($id);
+$epreuve->delete();
+return redirect()->route('epreuves.index');
+}
 }

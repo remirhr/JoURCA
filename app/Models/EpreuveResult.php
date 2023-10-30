@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class EpreuveResult extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'title',
+        'description',
+        'img'
+    ];
 }
