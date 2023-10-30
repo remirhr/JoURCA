@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\EpreuveResult;
 use Illuminate\Http\Request;
 
 class EpreuveResultController extends Controller
@@ -11,7 +12,8 @@ class EpreuveResultController extends Controller
      */
     public function index()
     {
-        //
+        $EpreuveList = EpreuveResult::orderBy('title', 'description')->take(7)->get();        
+        return view('Epreuve.list', ['EpreuveList' => $EpreuveList]);
     }
 
     /**
