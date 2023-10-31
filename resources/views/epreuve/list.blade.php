@@ -1,6 +1,24 @@
 @extends('template')
-@section('title') Epreuves de la semaine 1 @endsection
+@section('title') Jeux de l'URCA @endsection
 @section('content')
+<form id="formLogout" action="{{url('/logout')}}" method="POST">
+  @csrf
+</form>
+<div class="d-flex justify-content-center">
+  <span>
+@auth
+   
+    <button type="submit" form="formLogout" class="btn btn-sm btn-danger mb-2 mr-2">
+      Déconnexion
+    </button>
+@else
+    <a href="{{ url('/login') }}" class="btn btn-sm btn-primary mb-2 mr-2">
+      Connexion
+    </a>
+
+@endauth
+ </span>
+</div>
 <!--<div class="d-flex justify-content-center">
   <a href="{{route('epreuve.create')}}" class="btn btn-sm btn-primary mb-1">
     Création d'un nouvel article
@@ -29,20 +47,22 @@
   @csrf
 </form>
 @foreach($epreuveList as $epreuve)
-    <li class="list-group-item d-flex align-items-center">
+    <li class="list-group-epreuve d-flex align-epreuves-center">
       <div class="col-lg-10">
         <span class="">
-    <img src="{{$epreuve->img}}"  />
+    <img src="{{$epreuve->img}}"  width="50" height="50" />
         </span>
         <strong>{{$epreuve->title}}</strong>
-        @if(strlen($epreuve->description) > 50)
-          {{substr($epreuve->description, 0, 50)}}...
+        @if(strlen($epreuve->description) > 200)
+          {{substr($epreuve->description, 0, 200)}}...
         @else
           {{$epreuve->description}}
         @endif
-      </div>      
+      </div> 
+         
       <div class="col text-end">
         <a href="{{route('epreuve.show', $epreuve->id)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-eye"></i></a>
+        @auth 
         <a href="{{route('epreuve.edit',$epreuve->id)}}" class="btn btn-sm btn-primary mb-1">
   <i class="bi bi-pencil-square"></i>
 </a>
@@ -50,6 +70,7 @@
   <i class="bi bi-trash"></i>
 </button>
       </div>
+      @endauth
     </li>
 @endforeach
   </ul>
