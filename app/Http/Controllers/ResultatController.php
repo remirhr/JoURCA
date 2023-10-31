@@ -28,9 +28,13 @@ return view('resultat.list', ['resultatList' => $resultatList]);
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreResultatRequest $request)
     {
-        //
+        $equipe = Equipe::create($request->input());
+
+$equipe->save();
+ 
+return redirect()->route('resultat.list', ['resultat' => $equipe]);
     }
 
     /**

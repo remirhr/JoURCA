@@ -21,7 +21,7 @@ return new class extends Migration
             $table->integer('idMembre4');
             $table->integer('idMembre5');
             $table->integer('idMembre6');*/
-            $table->binary('pdp');
+        
            // $table->integer('idComposante');
            $table->timestamps();
 

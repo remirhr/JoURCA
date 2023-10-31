@@ -31,7 +31,7 @@ class EquipeSeeder extends Seeder
             [
                 'NomEquipe' => 'ThaBeast1',
                 'Slogan' =>  'Here for ',
-                'pdp' => 'img/equipe/hacker.jpg',
+         
                 'idParticipant1' => '22200942',
                 'idParticipant2' => '22200942',
                 'idParticipant3' => '22200942',
@@ -43,7 +43,7 @@ class EquipeSeeder extends Seeder
             [
                 'NomEquipe' => 'ThaBeast2',
                 'Slogan' =>  'Here for the win',
-                'pdp' => 'img/equipe/hacker.jpg',
+            
                 'idParticipant1' => '22200942',
                 'idParticipant2' => '22200942',
                 'idParticipant3' => '22200942',
@@ -54,7 +54,7 @@ class EquipeSeeder extends Seeder
             ],[
                 'NomEquipe' => 'ThaBeast3',
                 'Slogan' =>  'Here ',
-                'pdp' => 'img/equipe/hacker.jpg',
+               
                 'idParticipant1' => '22200942',
                 'idParticipant2' => '22200942',
                 'idParticipant3' => '22200942',

@@ -11,7 +11,6 @@ class Equipe extends Model
     protected $fillable = [
         'NomEquipe',
         'Slogan',
-        'pdp',
         'idParticipant1',
         'idParticipant2',
         'idParticipant3',
