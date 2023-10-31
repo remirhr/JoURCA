@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('composantes', function (Blueprint $table) {
-            $table->id('idComposante');
-            $table->string('title', 100);
-           $table->binary('img');
+        Schema::table('equipes', function (Blueprint $table) {
+            $table->unsignedBigInteger('idComposante')->nullable();
+            $table->foreign('idComposante')->references('idComposante')->on('composantes');
         });
     }
 
@@ -23,6 +22,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('composantes');
+        Schema::table('equipes', function (Blueprint $table) {
+            $table->dropForeign('idComposante');
+        });
     }
 };

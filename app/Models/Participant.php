@@ -18,10 +18,10 @@ class Participant extends Model
                 'pdp',
                 'idComposante'
     ];
-    public function composante() : BelongsTo {
+    public function composantes() : BelongsTo {
         return $this->belongsTo(Composante::class);
       }
-      public function equipe() : HasMany {
+      public function equipes() : HasMany {
         return $this->hasMany(Equipe::class);
       }
 }

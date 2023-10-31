@@ -22,31 +22,21 @@ class StoreResultatRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'NomEquipe' => ['required', 'max:100'],
-                'Slogan' => ['required'],
-                'idParticipant1' => ['required']
+            'id' => ['required', 'max:100'],
+                
                 
         ];
     }
     public function messages()
     {
         return [
-                'NomEquipe.required' => 'Il faut spécifier un nom',
-                'Slogan.required' => 'Il faut spécifier un slogan',
-                'idParticipant1.required' => 'Il faut un membre'
+                'id.required' => 'Il faut spécifier un numéro d\'équipe.'
             ];
     }
     public function attributes()
     {
         return [
-                'NomEquipe' => 'NomEquipe',
-                'Slogan' => 'Slogan',
-                'idParticipant1' => 'idParticipant1',
-                'idParticipant2' => 'idParticipant2',
-                'idParticipant3' => 'idParticipant3',
-                'idParticipant4' => 'idParticipant4',
-                'idParticipant5' => 'idParticipant5',
-                'idParticipant6' => 'idParticipant6'
+                'id' => 'id'
             ];
     }
 }

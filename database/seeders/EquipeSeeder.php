@@ -29,18 +29,19 @@ class EquipeSeeder extends Seeder
         DB::table('equipes')->delete();
         $equipe = [
             [
-                'NomEquipe' => 'ThaBeast',
-                'Slogan' =>  'Here for the win',
+                'NomEquipe' => 'ThaBeast1',
+                'Slogan' =>  'Here for ',
                 'pdp' => 'img/equipe/hacker.jpg',
                 'idParticipant1' => '22200942',
                 'idParticipant2' => '22200942',
                 'idParticipant3' => '22200942',
                 'idParticipant4' => '22200942',
                 'idParticipant5' => '22200942',
-                'idParticipant6' => '22200942'
+                'idParticipant6' => '22200942',
+                'idComposante' => '1'
             ],
             [
-                'NomEquipe' => 'ThaBeast',
+                'NomEquipe' => 'ThaBeast2',
                 'Slogan' =>  'Here for the win',
                 'pdp' => 'img/equipe/hacker.jpg',
                 'idParticipant1' => '22200942',
@@ -48,17 +49,19 @@ class EquipeSeeder extends Seeder
                 'idParticipant3' => '22200942',
                 'idParticipant4' => '22200942',
                 'idParticipant5' => '22200942',
-                'idParticipant6' => '22200942'
+                'idParticipant6' => '22200942',
+                'idComposante' => '1'
             ],[
-                'NomEquipe' => 'ThaBeast',
-                'Slogan' =>  'Here for the win',
+                'NomEquipe' => 'ThaBeast3',
+                'Slogan' =>  'Here ',
                 'pdp' => 'img/equipe/hacker.jpg',
                 'idParticipant1' => '22200942',
                 'idParticipant2' => '22200942',
                 'idParticipant3' => '22200942',
                 'idParticipant4' => '22200942',
                 'idParticipant5' => '22200942',
-                'idParticipant6' => '22200942'
+                'idParticipant6' => '22200942',
+                'idComposante' => '1'
             ]
             ];
             Equipe::insert($equipe);

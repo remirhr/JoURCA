@@ -1,8 +1,10 @@
 @extends('template')
 @section('title') Résultat @endsection
 @section('content')
-
-<i> <img src="../../{{$resultat->pdp}}" width="50" height="50" />  </i>
+<?php 
+int comp=$resultat->idComposante;
+?>
+<i> <img src="../../{{$resultat->composantes->img}}" width="50" height="50" />  </i>
 <strong>{{$resultat->NomEquipe}}</strong>
 {{$resultat->Slogan}}<br/>
 <p></p>

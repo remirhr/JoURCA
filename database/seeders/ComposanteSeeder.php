@@ -17,54 +17,69 @@ class ComposanteSeeder extends Seeder
         DB::table('composantes')->delete();
         $composante = [
             [
-                'title' => 'SEN'
-      
+                'title' => 'SEN',
+                'img'=>'img/science.png'
             ],
             [
-                'title' => 'LSH'
+                'title' => 'LSH',
+                'img'=>'img/lsh.png'
             ],
             [
-                'title' => 'EiSINe'
+                'title' => 'EiSINe',
+                'img'=>'img/eisine'
             ],
             [
-                'title' => 'SESG'
+                'title' => 'SESG',
+                'img'=>'img/sesg.jpeg'
             ],
             [
-                'title' => 'DSP'
+                'title' => 'DSP',
+                'img'=>'img/dsp.png'
             ],
             [
-                'title' => 'STAPS'
+                'title' => 'STAPS',
+                'img'=>'img/staps.png'
             ],
             [
-                'title' => 'Médecine'
+                'title' => 'Médecine',
+                'img'=>'img/medecine.png'
             ],
             
             [
-                'title' => 'CdC'
+                'title' => 'CdC',
+                'img'=>'img/cdc.png'
             ],
             [
-                'title' => 'ESIReims'
+                'title' => 'ESIReims',
+                'img'=>'img/esireims.png'
             ],
             [
-                'title' => 'Odonto'
+                'title' => 'Odonto',
+                'img'=>'img/cdc.png'
             ],
             [
-                'title' => 'Pharma'
+                'title' => 'Pharma',
+                'img'=>'img/pharma.jpeg'
             ],
             [
-                'title' => 'Institut G.Chappaz'
+                'title' => 'Institut G.Chappaz',
+                'img'=>'img/institut.png'
             ],
             [
-                'title' => 'IUT RCC'
+                'title' => 'IUT RCC',
+                'img'=>'img/iutrcc.png'
             ],
             [
-                'title' => 'IUT Troyes'
+                'title' => 'IUT Troyes',
+                'img'=>'img/iuttroyes.png'
             ],
             [
-                'title' => 'Inspé'
+                'title' => 'Inspé',
+                'img'=>'img/inspe.png'
             ],
             [
-                'title' => 'Siège'
+                'title' => 'Siège',
+                'img'=>'img/cdc.png'
             ]
             ];
             Composante::insert($composante);

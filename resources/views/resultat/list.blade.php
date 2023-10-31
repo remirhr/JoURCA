@@ -11,7 +11,7 @@
     <li class="list-group-resultat d-flex align-resultats-center">
       <div class="col-lg-10">
         <span class="">
-        <img src="../{{$resultat->pdp}}"  width="50" height="50" />
+        <img src="../{{$resultat->composantes->img}}"  width="50" height="50" />
         </span>
         <strong>{{$resultat->NomEquipe}}</strong>
         @if(strlen($resultat->Slogan) > 100)

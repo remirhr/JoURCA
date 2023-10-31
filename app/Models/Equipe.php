@@ -17,9 +17,13 @@ class Equipe extends Model
         'idParticipant3',
         'idParticipant4',
         'idParticipant5',
-        'idParticipant6'
+        'idParticipant6',
+        'idComposante'
     ];
-    public function participant() : BelongsTo {
+    public function participants() : BelongsTo {
         return $this->belongsTo(Participant::class);
+      }
+      public function composantes() : BelongsTo {
+        return $this->belongsTo(Composante::class);
       }
 }

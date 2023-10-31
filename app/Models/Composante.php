@@ -10,10 +10,14 @@ class Composante extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'title'
+        'title',
+        'img'
         
     ];
-    public function participant() : HasMany {
+    public function participants() : HasMany {
         return $this->hasMany(Participant::class);
+      }
+      public function equipes() : HasMany {
+        return $this->hasMany(Equipe::class);
       }
 }
