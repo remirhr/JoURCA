@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Modifier un article @endsection
+@section('title') Modifier une épreuve @endsection
 @section('content')
 
 @if($errors->any())

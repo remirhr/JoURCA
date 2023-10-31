@@ -31,13 +31,34 @@ class EquipeSeeder extends Seeder
             [
                 'NomEquipe' => 'ThaBeast',
                 'Slogan' =>  'Here for the win',
-                'pdp' => 'img/equipe/hacker.png',
-                'idParticipant1' => '1',
-                'idParticipant2' => '1',
-                'idParticipant3' => '1',
-                'idParticipant4' => '1',
-                'idParticipant5' => '1',
-                'idParticipant6' => '1'
+                'pdp' => 'img/equipe/hacker.jpg',
+                'idParticipant1' => '22200942',
+                'idParticipant2' => '22200942',
+                'idParticipant3' => '22200942',
+                'idParticipant4' => '22200942',
+                'idParticipant5' => '22200942',
+                'idParticipant6' => '22200942'
+            ],
+            [
+                'NomEquipe' => 'ThaBeast',
+                'Slogan' =>  'Here for the win',
+                'pdp' => 'img/equipe/hacker.jpg',
+                'idParticipant1' => '22200942',
+                'idParticipant2' => '22200942',
+                'idParticipant3' => '22200942',
+                'idParticipant4' => '22200942',
+                'idParticipant5' => '22200942',
+                'idParticipant6' => '22200942'
+            ],[
+                'NomEquipe' => 'ThaBeast',
+                'Slogan' =>  'Here for the win',
+                'pdp' => 'img/equipe/hacker.jpg',
+                'idParticipant1' => '22200942',
+                'idParticipant2' => '22200942',
+                'idParticipant3' => '22200942',
+                'idParticipant4' => '22200942',
+                'idParticipant5' => '22200942',
+                'idParticipant6' => '22200942'
             ]
             ];
             Equipe::insert($equipe);

@@ -10,6 +10,7 @@ class Participant extends Model
 {
     use HasFactory;
     protected $fillable = [
+      'idParticipant',
                 'NomP',
                 'PrenomP',
                 'DateDeNaissance',

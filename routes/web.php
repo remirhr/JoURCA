@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EpreuveResultController;
-
+use App\Http\Controllers\ResultatController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +17,7 @@ use App\Http\Controllers\EpreuveResultController;
 
 Route::resource('/', EpreuveResultController::class);
 Route::resource('epreuve', EpreuveResultController::class);
-
+Route::resource('resultat', ResultatController::class);
 Route::resource('epreuve', EpreuveResultController::class);
 Route::middleware([
     'auth:sanctum',

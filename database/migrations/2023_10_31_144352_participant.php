@@ -18,7 +18,8 @@ return new class extends Migration
             $table->date('DateDeNaissance');
             $table->integer('NumeroEtudiant');
             $table->binary('pdp');
-           // $table->integer('idComposante');
+           // $table->integer('idComposante')
+           $table->timestamps();
 
         });
     }

@@ -12,17 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('equipes', function (Blueprint $table) {
-            $table->unsignedBigInteger('idParticipant1');
+            $table->unsignedBigInteger('idParticipant1')->nullable();
             $table->foreign('idParticipant1')->references('idParticipant')->on('participants');
-            $table->unsignedBigInteger('idParticipant2');
+            $table->unsignedBigInteger('idParticipant2')->nullable();
             $table->foreign('idParticipant2')->references('idParticipant')->on('participants');
-            $table->unsignedBigInteger('idParticipant3');
+            $table->unsignedBigInteger('idParticipant3')->nullable();
             $table->foreign('idParticipant3')->references('idParticipant')->on('participants');
-            $table->unsignedBigInteger('idParticipant4');
+            $table->unsignedBigInteger('idParticipant4')->nullable();
             $table->foreign('idParticipant4')->references('idParticipant')->on('participants');
-            $table->unsignedBigInteger('idParticipant5');
+            $table->unsignedBigInteger('idParticipant5')->nullable();
             $table->foreign('idParticipant5')->references('idParticipant')->on('participants');
-            $table->unsignedBigInteger('idParticipant6');
+            $table->unsignedBigInteger('idParticipant6')->nullable();
             $table->foreign('idParticipant6')->references('idParticipant')->on('participants');
         });
     }
