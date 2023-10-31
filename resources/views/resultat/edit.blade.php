@@ -1,22 +1,6 @@
 @extends('template')
 @section('title') Modifier une équipe @endsection
 @section('content')
-<?php 
-    if($_POST["id"]!=0) {
-        $BD = new PDO(
-            "mysql:host=".localhost.";dbname=".projet303v1-3.";charset=utf8",
-            'root',
-            'Remi.rahir25',
-            self::OPTIONS
-        );
-    } $SQL =<<<SQL
-    SELECT `id`, `NomEquipe`, `Slogan`, `pdp` FROM `equipes`; 
-    SQL; 
-
-    $requete = $BD->query($SQL);
-    $ligne = $requete->fetch();
-
-    ?>
 @if($errors->any())
     <div class="alert alert-danger">
         <ul>

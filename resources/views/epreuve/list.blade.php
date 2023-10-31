@@ -70,6 +70,11 @@
   <i class="bi bi-trash"></i>
 </button>
       </div>
+      <div class="d-flex justify-content-center">
+  <a href="{{route('item.create')}}" class="btn btn-sm btn-primary mb-1">
+    Création d'une nouvelle équi
+  </a>
+</div>
       @endauth
     </li>
 @endforeach
