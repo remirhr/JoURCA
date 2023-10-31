@@ -31,7 +31,13 @@ class EquipeSeeder extends Seeder
             [
                 'NomEquipe' => 'ThaBeast',
                 'Slogan' =>  'Here for the win',
-                'pdp' => 'img/equipe/hacker.png'
+                'pdp' => 'img/equipe/hacker.png',
+                'idParticipant1' => '1',
+                'idParticipant2' => '1',
+                'idParticipant3' => '1',
+                'idParticipant4' => '1',
+                'idParticipant5' => '1',
+                'idParticipant6' => '1'
             ]
             ];
             Equipe::insert($equipe);

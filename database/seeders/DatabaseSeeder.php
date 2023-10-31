@@ -15,7 +15,8 @@ class DatabaseSeeder extends Seeder
         $this->call([UserSeeder::class]);
         $this->call([EpreuveResultSeeder::class]);
         $this->call([ComposanteSeeder::class]);
-        $this->call([EquipeSeeder::class]);
         $this->call([ParticipantSeeder::class]);
+        $this->call([EquipeSeeder::class]);
+        
     }
 }
