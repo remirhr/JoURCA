@@ -10,7 +10,7 @@
 @if($epreuve->id == 1)
 <a href="{{url('classement1/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Voir les résultats</a>
 @elseif($epreuve->id == 2)
-
+<a href="{{url('classement2/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Voir les résultats</a>
 @else
 
 @endif

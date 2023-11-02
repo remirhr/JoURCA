@@ -27,6 +27,9 @@ class Equipe extends Model
         return $this->belongsTo(Composante::class);
       }
       public function classement1() : HasMany {
-        return $this->hasMany(Classement1::class);
+        return $this->hasMany(classement1::class);
+      }
+      public function Classement2() : HasMany {
+        return $this->hasMany(Classement2::class);
       }
 }

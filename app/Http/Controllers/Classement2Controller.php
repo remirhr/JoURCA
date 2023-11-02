@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreClassement1Request;
-use App\Models\classement1;
+use App\Http\Requests\StoreClassement2Request;
+use App\Models\Classement2;
 use Illuminate\Http\Request;
 
-class Classement1Controller extends Controller
+class Classement2Controller extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $classement1List = classement1::orderBy('id')->take(3)->get();        
-return view('classement1.list', ['classement1List' => $classement1List]);
+        $classement2List = Classement2::orderBy('id')->take(3)->get();        
+return view('classement2.list', ['classement2List' => $classement2List]);
     }
 
     /**
@@ -38,7 +38,7 @@ return view('classement1.list', ['classement1List' => $classement1List]);
      */
     public function show(string $id)
     {
-        return view('classement1.show', ['classement1' => Classement1::findOrFail($id)]);
+        return view('classement2.show', ['classement2' => Classement2::findOrFail($id)]);
     }
 
     /**
@@ -46,17 +46,17 @@ return view('classement1.list', ['classement1List' => $classement1List]);
      */
     public function edit(string $id)
     {
-        return view('classement1.edit', ['classement1' => Classement1::findOrFail($id)]);
+        return view('classement2.edit', ['classement2' => Classement2::findOrFail($id)]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreClassement1Request $request, Classement1 $classement1)
+    public function update(StoreClassement2Request $request, Classement2 $classement2)
 {
     $request->validated();
-    $classement1->update($request->input());
-    return redirect()->route('classement1.show', ['classement1' => $classement1]);
+    $classement2->update($request->input());
+    return redirect()->route('classement2.show', ['classement2' => $classement2]);
 }
 
     /**
@@ -64,8 +64,8 @@ return view('classement1.list', ['classement1List' => $classement1List]);
      */
     public function destroy(string $id)
     {
-        $classement1 = classement1::findOrFail($id);
-        $classement1->delete();
-        return redirect()->route('classement1.index');
+        $classement2 = Classement2::findOrFail($id);
+        $classement2->delete();
+        return redirect()->route('classement2.index');
     }
 }

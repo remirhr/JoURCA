@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Classement2Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EpreuveResultController;
 use App\Http\Controllers\ResultatController;
@@ -15,7 +16,7 @@ use App\Http\Controllers\Classement1Controller;
 |
 */
 
-
+Route::resource('classement2', Classement2Controller::class);
 Route::resource('classement1', Classement1Controller::class);
 Route::resource('/', EpreuveResultController::class);
 Route::resource('epreuve', EpreuveResultController::class);
