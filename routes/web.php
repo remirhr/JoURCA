@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Classement2Controller;
 use App\Http\Controllers\Classement3Controller;
+use App\Http\Controllers\Classement4Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EpreuveResultController;
 use App\Http\Controllers\ResultatController;
@@ -16,6 +17,8 @@ use App\Http\Controllers\Classement1Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::resource('classement4', Classement4Controller::class);
 Route::resource('classement3', Classement3Controller::class);
 Route::resource('classement2', Classement2Controller::class);
 Route::resource('classement1', Classement1Controller::class);

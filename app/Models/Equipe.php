@@ -33,6 +33,9 @@ class Equipe extends Model
         return $this->hasMany(Classement2::class);
       }
       public function Classement3() : HasMany {
-        return $this->hasMany(Classement2::class);
+        return $this->hasMany(Classement3::class);
+      }
+      public function Classement4() : HasMany {
+        return $this->hasMany(Classement4::class);
       }
 }

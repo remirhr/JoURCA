@@ -2,7 +2,7 @@
 @section('title') Affichage du classement @endsection
 @section('content')
 <i></i>
-<strong>{{$classement3->idEquipeC3}}</strong>
+<strong>{{$classement4->idEquipeC4}}</strong>
 <br/>
-<a href="{{url('classement3/')}}">Retour à la liste</a>
+<a href="{{url('classement4/')}}">Retour à la liste</a>
 @endsection
