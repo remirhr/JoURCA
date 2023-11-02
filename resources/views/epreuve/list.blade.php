@@ -6,13 +6,7 @@
 </form>
 <div class="d-flex justify-content-center">
   <span>
-    @auth
-    <div class="d-flex justify-content-center">
-  <a href="{{route('resultat.create')}}" class="btn btn-sm btn-primary mb-1">
-    Création d'une nouvelle équipe
-  </a>
-</div>
-@endauth
+   
 @auth
    
     <button type="submit" form="formLogout" class="btn btn-sm btn-danger mb-2 mr-2">
@@ -82,4 +76,11 @@
     </li>
 @endforeach
   </ul>
+  @auth
+    <div class="d-flex justify-content-center">
+  <a href="{{route('resultat.create')}}" class="btn btn-sm btn-primary mb-1">
+    Création d'une nouvelle équipe
+  </a>
+</div>
+@endauth  
 @endsection

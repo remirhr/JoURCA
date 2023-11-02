@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 class Equipe extends Model
 {
     use HasFactory;
@@ -24,5 +25,8 @@ class Equipe extends Model
       }
       public function composantes() : BelongsTo {
         return $this->belongsTo(Composante::class);
+      }
+      public function classement1() : HasMany {
+        return $this->hasMany(Classement1::class);
       }
 }

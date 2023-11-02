@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EpreuveResultController;
 use App\Http\Controllers\ResultatController;
+use App\Http\Controllers\Classement1Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +16,7 @@ use App\Http\Controllers\ResultatController;
 */
 
 
+Route::resource('classement1', Classement1Controller::class);
 Route::resource('/', EpreuveResultController::class);
 Route::resource('epreuve', EpreuveResultController::class);
 Route::resource('resultat', ResultatController::class);
