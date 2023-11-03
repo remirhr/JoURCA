@@ -32,5 +32,6 @@ class DatabaseSeeder extends Seeder
         $this->call([Classement12Seeder::class]);
         $this->call([Classement13Seeder::class]);
         $this->call([Classement14Seeder::class]);
+        $this->call([Classement15Seeder::class]);
     }
 }
