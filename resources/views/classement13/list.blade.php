@@ -10,7 +10,7 @@
     <li class="list-group-item d-flex align-items-center">
       <div class="col-lg-13">
         <span class="badge rounded-pill bg-primary">
-        {{$classement13->idEquipeC13}} 
+        {{$classement13->id}} 
         </span>
         <strong></strong>
        
