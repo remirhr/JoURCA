@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Affichage du classement @endsection
+@section('title') Equipe numéro {{$classement7->id}} @endsection
 @section('content')
 <i></i>
 <strong>{{$classement7->idEquipeC7}}</strong>

@@ -7,6 +7,7 @@ use App\Http\Controllers\Classement5Controller;
 use App\Http\Controllers\Classement6Controller;
 use App\Http\Controllers\Classement7Controller;
 use App\Http\Controllers\Classement8Controller;
+use App\Http\Controllers\Classement9Controller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EpreuveResultController;
 use App\Http\Controllers\ResultatController;
@@ -21,6 +22,7 @@ use App\Http\Controllers\Classement1Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::resource('classement9', Classement9Controller::class);
 Route::resource('classement8', Classement8Controller::class);
 Route::resource('classement7', Classement7Controller::class);
 Route::resource('classement6', Classement6Controller::class);
