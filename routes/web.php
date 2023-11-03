@@ -31,6 +31,8 @@ use App\Http\Controllers\Classement1Controller;
 |
 */
 Route::get('composantes/random', [ComposanteController::class, 'random']);
+Route::resource('composantes/random', ComposanteController::class);
+Route::resource('composantes', ComposanteController::class);
 Route::resource('classement15', Classement15Controller::class);
 Route::resource('classement14', Classement14Controller::class);
 Route::resource('classement13', Classement13Controller::class);
