@@ -18,9 +18,10 @@
       <div class="col text-end">
         <a href="{{route('classement7.show', $classement7->id)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-eye"></i></a>
       </div>
+      @auth
       <a href="{{route('classement7.edit',$classement7->id)}}" class="btn btn-sm btn-primary mb-1">
   <i class="bi bi-pencil-square"></i>
-  
+  @endauth
 </a>
 <!--
 <button type="submit" formaction="{{route('classement7.destroy', $classement7->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">

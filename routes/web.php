@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Classement10Controller;
 use App\Http\Controllers\Classement2Controller;
 use App\Http\Controllers\Classement3Controller;
 use App\Http\Controllers\Classement4Controller;
@@ -22,6 +23,7 @@ use App\Http\Controllers\Classement1Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::resource('classement10', Classement10Controller::class);
 Route::resource('classement9', Classement9Controller::class);
 Route::resource('classement8', Classement8Controller::class);
 Route::resource('classement7', Classement7Controller::class);
