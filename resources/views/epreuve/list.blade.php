@@ -67,9 +67,6 @@
         <a href="{{route('epreuve.edit',$epreuve->id)}}" class="btn btn-sm btn-primary mb-1">
   <i class="bi bi-pencil-square"></i>
 </a>
-<button type="submit" formaction="{{route('epreuve.destroy', $epreuve->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
-  <i class="bi bi-trash"></i>
-</button>
       </div>
       
       @endauth
@@ -78,8 +75,13 @@
   </ul>
   @auth
     <div class="d-flex justify-content-center">
-  <a href="{{route('resultat.create')}}" class="btn btn-sm btn-primary mb-1">
-    Création d'une nouvelle équipe
+  <a href="{{url('resultat/')}}" class="btn btn-sm btn-primary mb-1">
+    Liste des équipes et modifications
+  </a>
+</div>
+<div class="d-flex justify-content-center">
+  <a href="{{url('participant/')}}" class="btn btn-sm btn-primary mb-1">
+    Liste des participants et modifications
   </a>
 </div>
 @endauth  

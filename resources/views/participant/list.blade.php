@@ -1,15 +1,17 @@
 @extends('template')
-@section('title') Liste des équipes  @endsection
+@section('title') Listes des participants @endsection
 @section('content')
 
-  <ul class="list-group">
+
+              <ul class="list-group">
   <form id="deleteForm" action="" method="POST">
   @method('DELETE')
   @csrf
 </form>
-@foreach($resultatList as $resultat)
+
+@foreach($participantList as $participant)
 <?php 
-$comp=$resultat->idComposante;
+$comp=$participant->idComposante;
 $path;
 if($comp==1){
     $path="img/science.png";
@@ -47,42 +49,43 @@ elseif($comp==3){
                                                         $path= "img/cdc.png";
                                                         }
 ?>
-    <li class="list-group-resultat d-flex align-resultats-center">
+    <li class="list-group-epreuve d-flex align-epreuves-center">
       <div class="col-lg-10">
         <span class="">
-        <img src="../{{$path}}"  width="50" height="50" />
+    <img src="../{{$path}}"  width="50" height="50" />
         </span>
-        <strong>{{$resultat->NomEquipe}}</strong>
-        @if(strlen($resultat->Slogan) > 100)
-          {{substr($resultat->Slogan, 0, 100)}}...
-        @else
-          {{$resultat->Slogan}}
-        @endif
-      </div>      
+        <strong>{{$participant->NomP}}</strong>
+        <strong>{{$participant->PrenomP}}</strong>
+    <br> Numéro étudiant : <strong>{{$participant->NumeroEtudiant}}</strong>
+    <br>Date de naissance : <strong>{{$participant->DateDeNaissance}}</strong>
+      </div> 
+         
       <div class="col text-end">
-        <a href="{{route('resultat.show', $resultat->id)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-eye"></i></a>
-       @auth
-        <a href="{{route('resultat.edit',$resultat->id)}}" class="btn btn-sm btn-primary mb-1">
+        <a href="{{route('participant.show', $participant->idParticipant)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-eye"></i></a>
+        @auth 
+        <a href="{{route('participant.edit',$participant->idParticipant)}}" class="btn btn-sm btn-primary mb-1">
   <i class="bi bi-pencil-square"></i>
-  
 </a>
-<button type="submit" formaction="{{route('resultat.destroy', $resultat->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
+<button type="submit" formaction="{{route('participant.destroy', $participant->idParticipant)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
   <i class="bi bi-trash"></i>
 </button>
       </div>
-
+      
       @endauth
     </li>
-    
-@endforeach
-  </ul>
-  <p></p>
-  <a href="{{url('epreuve/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour à la liste des épreuves</a>
-  @auth 
-  <div class="d-flex justify-content-center">
-  <a href="{{route('resultat.create')}}" class="btn btn-sm btn-primary mb-1">
-    Créer une équipe
+    @auth 
+    <div class="d-flex justify-content-center">
+  <a href="{{route('participant.create')}}" class="btn btn-sm btn-primary mb-1">
+    Créer un participant
   </a>
+  <p> </p>
+  
 </div>
+
 @endauth
+<div class="d-flex justify-content-center">
+<a href="{{url('epreuve/')}}" class="btn btn-danger mb-1">Retour</a>
+                                                      </div>
+@endforeach
+  </ul> 
 @endsection

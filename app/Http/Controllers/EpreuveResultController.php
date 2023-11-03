@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreEpreuveRequest;
+use App\Http\Requests\StoreResultatRequest;
 use App\Models\EpreuveResult;
 use Illuminate\Http\Request;
 
@@ -28,7 +29,7 @@ class EpreuveResultController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreResultatRequest $request)
     {
       
         $request->validated();

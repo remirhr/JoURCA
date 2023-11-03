@@ -15,7 +15,6 @@ class Participant extends Model
                 'PrenomP',
                 'DateDeNaissance',
                 'NumeroEtudiant',
-                'pdp',
                 'idComposante'
     ];
     public function composantes() : BelongsTo {

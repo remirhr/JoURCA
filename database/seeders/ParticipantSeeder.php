@@ -28,7 +28,6 @@ class ParticipantSeeder extends Seeder
                 'PrenomP' =>  'Rémi',
                 'DateDeNaissance'=> '2004-09-22',
                 'NumeroEtudiant'=> '22200942',
-                'pdp' => 'img/participant/remirahir.png',
                 'idComposante' => '1'
             ]
             ];

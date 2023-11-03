@@ -14,6 +14,7 @@ use App\Http\Controllers\Classement6Controller;
 use App\Http\Controllers\Classement7Controller;
 use App\Http\Controllers\Classement8Controller;
 use App\Http\Controllers\Classement9Controller;
+use App\Http\Controllers\ParticipantController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EpreuveResultController;
 use App\Http\Controllers\ResultatController;
@@ -28,6 +29,7 @@ use App\Http\Controllers\Classement1Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::resource('classement15', Classement15Controller::class);
 Route::resource('classement14', Classement14Controller::class);
 Route::resource('classement13', Classement13Controller::class);
@@ -46,6 +48,7 @@ Route::resource('classement1', Classement1Controller::class);
 Route::resource('/', EpreuveResultController::class);
 Route::resource('epreuve', EpreuveResultController::class);
 Route::resource('resultat', ResultatController::class);
+Route::resource('participant', ParticipantController::class);
 Route::resource('epreuve', EpreuveResultController::class);
 Route::middleware([
     'auth:sanctum',

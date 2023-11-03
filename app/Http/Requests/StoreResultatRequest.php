@@ -24,7 +24,8 @@ class StoreResultatRequest extends FormRequest
         return [
             'NomEquipe' => ['required', 'max:100'],
                 'Slogan' => ['required'],
-                'idParticipant1' => ['required']
+                'idParticipant1' => ['required'],
+                'idComposante' => ['required']
                 
                 
         ];
@@ -34,7 +35,8 @@ class StoreResultatRequest extends FormRequest
         return [
             'NomEquipe.required' => 'Il faut spécifier un nom',
             'Slogan.required' => 'Il faut spécifier un slogan',
-            'idParticipant1.required' => 'Il faut un membre'
+            'idParticipant1.required' => 'Il faut un membre',
+            'idComposante' => 'Il faut une composante'
             ];
     }
     public function attributes()
@@ -47,7 +49,8 @@ class StoreResultatRequest extends FormRequest
             'idParticipant3' => 'idParticipant3',
             'idParticipant4' => 'idParticipant4',
             'idParticipant5' => 'idParticipant5',
-            'idParticipant6' => 'idParticipant6'
+            'idParticipant6' => 'idParticipant6',
+            'idComposante' => 'idComposante'
             ];
     }
 }
