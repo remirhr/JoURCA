@@ -25,5 +25,6 @@ class DatabaseSeeder extends Seeder
         $this->call([Classement5Seeder::class]);
         $this->call([Classement6Seeder::class]);
         $this->call([Classement7Seeder::class]);
+        $this->call([Classement8Seeder::class]);
     }
 }
