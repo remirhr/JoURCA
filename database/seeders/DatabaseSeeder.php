@@ -30,5 +30,7 @@ class DatabaseSeeder extends Seeder
         $this->call([Classement10Seeder::class]);
         $this->call([Classement11Seeder::class]);
         $this->call([Classement12Seeder::class]);
+        $this->call([Classement13Seeder::class]);
+        $this->call([Classement14Seeder::class]);
     }
 }
