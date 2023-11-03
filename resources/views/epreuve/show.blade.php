@@ -19,6 +19,8 @@
 <a href="{{url('classement5/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Voir les résultats</a>
 @elseif($epreuve->id == 6)
 <a href="{{url('classement6/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Voir les résultats</a>
+@elseif($epreuve->id == 7)
+<a href="{{url('classement7/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Voir les résultats</a>
 @else
 
 @endif
