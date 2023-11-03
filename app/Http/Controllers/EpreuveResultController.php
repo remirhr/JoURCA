@@ -14,7 +14,7 @@ class EpreuveResultController extends Controller
      */
     public function index()
     {
-        $EpreuveList = EpreuveResult::orderBy('id')->take(15)->get();        
+        $EpreuveList = EpreuveResult::orderBy('id')->get();        
         return view('epreuve.list', ['epreuveList' => $EpreuveList]);
     }
 
@@ -25,7 +25,7 @@ class EpreuveResultController extends Controller
     {
         return view('epreuve.create');
     }
-
+    
     /**
      * Store a newly created resource in storage.
      */

@@ -14,6 +14,7 @@ use App\Http\Controllers\Classement6Controller;
 use App\Http\Controllers\Classement7Controller;
 use App\Http\Controllers\Classement8Controller;
 use App\Http\Controllers\Classement9Controller;
+use App\Http\Controllers\ComposanteController;
 use App\Http\Controllers\ParticipantController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EpreuveResultController;
@@ -29,7 +30,7 @@ use App\Http\Controllers\Classement1Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('composantes/random', [ComposanteController::class, 'random']);
 Route::resource('classement15', Classement15Controller::class);
 Route::resource('classement14', Classement14Controller::class);
 Route::resource('classement13', Classement13Controller::class);

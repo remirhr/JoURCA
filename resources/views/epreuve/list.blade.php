@@ -1,9 +1,26 @@
 @extends('template')
 @section('title') Jeux de l'URCA @endsection
+
 @section('content')
+@section('head')
+<script
+  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+  crossorigin="anonymous"></script>
+<script src="{{asset('storage/js/categories.js')}}"></script>
+@endsection
 <form id="formLogout" action="{{url('/logout')}}" method="POST">
   @csrf
 </form>
+<div class="d-flex justify-content-center">
+  <div class="row">
+    <div class="offset-sm-3 col-sm-6 mb-3 rounded border border-secondary">
+      <strong id="title"></strong><br/>
+      <img id="img" height="50px" width="50px">
+    
+    </div>
+  </div>
+</div>
 <div class="d-flex justify-content-center">
   <span>
    
@@ -47,6 +64,7 @@
   @method('DELETE')
   @csrf
 </form>
+
 @foreach($epreuveList as $epreuve)
     <li class="list-group-epreuve d-flex align-epreuves-center">
       <div class="col-lg-10">
@@ -85,4 +103,28 @@
   </a>
 </div>
 @endauth  
+@endsection
+@section('javaScript')
+function recherche() {
+    let requete = $.ajax({
+        "type" : "GET",
+        "url" : "{{ url('/composantes/random') }}",
+        "dataType": "json"
+        });
+    requete.fail(function (jqXHR, textStatus, errorThrown){
+            console.log(jqXHR);
+        });
+    requete.done(function (response, textStatus, jqXHR) {
+        $('#title').text(response['title']);
+        const image = new Image(); image. src = "../$('#img')"; image
+        let img = image;
+        img.img(response['image']);
+       $('#img').img(response['image']);
+        setTimeout(recherche, 3000);
+    });
+    
+}
+$(document).ready(function (){
+    recherche();
+  });
 @endsection
