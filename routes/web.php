@@ -17,6 +17,7 @@ use App\Http\Controllers\Classement1Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::resource('classement6', Classement4Controller::class);
 Route::resource('classement5', Classement4Controller::class);
 Route::resource('classement4', Classement4Controller::class);
 Route::resource('classement3', Classement3Controller::class);

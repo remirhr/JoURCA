@@ -22,9 +22,10 @@
   <i class="bi bi-pencil-square"></i>
   
 </a>
+<!--
 <button type="submit" formaction="{{route('classement3.destroy', $classement3->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
   <i class="bi bi-trash"></i>
-</button>
+</button>-->
     </li>
 @endforeach
   </ul>

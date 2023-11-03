@@ -41,4 +41,7 @@ class Equipe extends Model
       public function Classement5() : HasMany {
         return $this->hasMany(Classement5::class);
       }
+      public function Classement6() : HasMany {
+        return $this->hasMany(Classement6::class);
+      }
 }
