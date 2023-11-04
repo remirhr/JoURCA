@@ -96,8 +96,9 @@
 body {
   
   background-image:url("img/wave.svg");
-  background-size: cover;
-background-repeat: no-repeat;
+  background-size: auto;
+background-repeat: repeat-x ;
+
 }
 
 /*

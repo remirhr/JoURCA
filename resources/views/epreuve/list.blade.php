@@ -62,7 +62,7 @@
 </form>
 &nbsp;
 
-<div class="row row-cols-1 row-cols-md-4 g-4">
+<div class="row row-cols-1 row-cols-md-5 g-4">
 @foreach($epreuveList as $epreuve)
 
 &nbsp;

@@ -8,9 +8,24 @@
 </form>
 @foreach($classement11List as $classement11)
     <li class="list-group-item d-flex align-items-center">
-      <div class="col-lg-11">
-        <span class="badge rounded-pill bg-primary">
-        {{$classement11->id}} 
+      <div class="col-lg-10">
+        <span class="">
+       <?php
+       $path;
+       $comp=$classement11->id;
+        if($comp==1){
+          $path="img/medailleor.png";
+        }
+        elseif($comp==2){
+          $path="img/medailleargent.png";
+        }
+        elseif($comp==3){
+          $path="img/medaillebronze.png";
+        }
+        else{}
+        
+       ?>
+       <img src="{{$path}}" width="50" height="50"/>
         </span>
         <strong></strong>
        
@@ -24,10 +39,7 @@
   <i class="bi bi-vector-pen"></i>
   @endauth
 </a>
-<!--
-<button type="submit" formaction="{{route('classement11.destroy', $classement11->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
-  <i class="bi bi-trash"></i>
-</button>-->
+
     </li>
 @endforeach
   </ul>
