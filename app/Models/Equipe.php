@@ -24,7 +24,7 @@ class Equipe extends Model
         return $this->belongsTo(Participant::class);
       }
       public function composantes() : BelongsTo {
-        return $this->belongsTo(Composante::class);
+        return $this->belongsTo(Composante::class,'idComposante');
       }
       public function classement1() : HasMany {
         return $this->hasMany(classement1::class);
