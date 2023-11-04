@@ -62,26 +62,29 @@
   @csrf
 </form>
 &nbsp;
-<div class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
+<div stye="border-color:black;" class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
 @foreach($epreuveList as $epreuve)
 
 &nbsp;
+
 <div class="col">
+  <div class="hover">
     <div class="card">
       <img src="{{$epreuve->img}}" class="card-img-top" height="300px">
       <div class="card-body">
+      <a href="{{route('epreuve.show', $epreuve->id)}}" style="color:white;" class="stretched-link "><p>afficher</p></a>
         <h5 class="card-title"><strong>{{$epreuve->title}}</strong></h5>
         <p class="card-text">{{$epreuve->description}}</p>
       </div>
-       <a href="{{route('epreuve.show', $epreuve->id)}}"  class="btn btn-sm btn-primary mb-1"><i class="bi bi-aspect-ratio"></i></a>
+</div>
+    </div>
+  
        
         @auth 
         <a href="{{route('epreuve.edit',$epreuve->id)}}" class="btn btn-sm btn-primary mb-1">
         <i class="bi bi-vector-pen"></i>
-
 </a>
 @endauth
-    </div>
   </div>
 
 @endforeach

@@ -10,12 +10,11 @@
   </head>
   <body>
     <div stye="border-color:black;" class="container">
-      <div stye="border-color:black;" class="card mt-4"><!--card-header bg-primary text-white text-center-->
+      <div stye="border-color:black;" class="card mt-4">
         <div stye="border-color:black;" class="button-53">@yield('title')</div>
         <div style="background-color:#12142B;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
       </div>
     </div>
-    
     <style>
 .button-54 {
   font-family: "Open Sans", sans-serif;
@@ -35,12 +34,25 @@
   touch-action: manipulation;
   border-radius: 25px;
 }
-
+.card.text-bg-dark {
+  --bs-card-border-color: #C3CBD2;
+}
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     border-color: #12142B;
+}
+.hover{
+  
+transition: 1s ease;
+}
+
+.hover:hover{
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 1s ease;
 }
 
 .button-54:active {
@@ -105,17 +117,9 @@ body {
   
   background-color:#12142B;
   background-size: auto;
-background-repeat: repeat-x ;
-
+background-repeat: repeat-x;
+border-color:black;
 }
-
-/*
-.button-54:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-}*/
-
 
 </style>  
   </body>
