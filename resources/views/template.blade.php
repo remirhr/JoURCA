@@ -12,7 +12,7 @@
     <div stye="border-color:black;" class="container">
       <div stye="border-color:black;" class="card mt-4">
         <div stye="border-color:black;" class="button-53">@yield('title')</div>
-        <div style="background-color:#12142B;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
+        <div style="background-color:#12142B;  margin:-5px;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
       </div>
     </div>
     <style>

@@ -62,7 +62,7 @@
   @csrf
 </form>
 &nbsp;
-<div stye="border-color:black;" class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
+<div stye="border-color:black; margin:5px;" class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
 @foreach($epreuveList as $epreuve)
 
 &nbsp;
