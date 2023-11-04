@@ -76,13 +76,23 @@ elseif($comp==3){
     
 @endforeach
   </ul>
-  <p></p>
-  <a href="{{url('epreuve/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour à la liste des épreuves</a>
-  @auth 
-  <div class="d-flex justify-content-center">
-  <a href="{{route('resultat.create')}}" class="btn btn-sm btn-primary mb-1">
+
+  <br>
+
+@auth 
+    <br>
+    <div class="d-flex justify-content-center">
+  <a href="{{route('resultat.create')}}" class="button-54">
     Créer une équipe
   </a>
+  <p> </p>
+  <br>
 </div>
+<br>
 @endauth
+<div class="d-flex justify-content-center">
+  <br>
+<a href="{{url('epreuve/')}}" class="button-red">Retour</a>
+                                                      </div>
+  </ul> 
 @endsection

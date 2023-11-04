@@ -4,6 +4,7 @@
         <img src="{{ url('img/jeuxdelurcaclr-removebg-preview.png') }}" />
         </x-slot>
 <style>
+    
     img {
         width: 200px;
         text-align: center;
