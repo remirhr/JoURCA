@@ -12,9 +12,10 @@
     <div class="container">
       <div class="card mt-4"><!--card-header bg-primary text-white text-center-->
         <div class="button-53">@yield('title')</div>
-        <div style="background-color:#12142B;   color:aliceblue; font-family:'Perpetua'; font-size:18px;" class="card-body">@yield('content')</div>
+        <div style="background-color:#12142B;   color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
       </div>
     </div>
+    
     <style>
 .button-54 {
   font-family: "Open Sans", sans-serif;
@@ -89,9 +90,12 @@
   touch-action: manipulation;
   
 }
+.button-view {
+  background-image: url("img/blob.svg");
+}
 body {
   
-  background-color:#3C3C78;
+  background-image:url("img/wave.svg");
   background-size: cover;
 background-repeat: no-repeat;
 }

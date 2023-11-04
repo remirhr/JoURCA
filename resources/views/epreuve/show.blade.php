@@ -1,10 +1,12 @@
 @extends('template')
 @section('title') {{$epreuve->title}} @endsection
 @section('content')
-
-<i> <img src="../{{$epreuve->img}}" width="50" height="50" /> </i>
-<strong>{{$epreuve->title}}</strong>
-{{$epreuve->description}}<br/>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="../{{$epreuve->img}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><strong>{{$epreuve->title}}</strong></h5>
+    <p class="card-text">{{$epreuve->description}}</p>
+    
 <p></p>
 <a href="{{url('epreuve/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour à la liste</a>
 @if($epreuve->id == 1)
@@ -40,4 +42,7 @@
 @else
 
 @endif
+  </div>
+</div>
+
 @endsection

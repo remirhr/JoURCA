@@ -53,7 +53,7 @@
  &nbsp;
   
 </div>
- <ul class="list-group">
+ 
  &nbsp;
   
   <form id="deleteForm" action="" method="POST">
@@ -61,38 +61,33 @@
   @csrf
 </form>
 &nbsp;
- 
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
 @foreach($epreuveList as $epreuve)
 
 &nbsp;
-  
-    <li class="list-group-epreuve d-flex align-epreuves-center">
-      <div class="col-lg-10">
-        <span class="">
-    <img src="{{$epreuve->img}}"  width="50" height="50" />
-        </span>
-        &nbsp;
 
-        <strong>{{$epreuve->title}}</strong>
-        @if(strlen($epreuve->description) > 200)
-          {{substr($epreuve->description, 0, 200)}}...
-        @else
-          {{$epreuve->description}}
-        @endif
-      </div> 
-         
-      <div class="col text-end">
-        <a href="{{route('epreuve.show', $epreuve->id)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-eye"></i></a>
+   
+<div class="col">
+    <div class="card">
+      <img src="{{$epreuve->img}}" class="card-img-top" height="300px">
+      <div class="card-body">
+        <h5 class="card-title"><strong>{{$epreuve->title}}</strong></h5>
+        <p class="card-text">{{$epreuve->description}}</p>
+      </div>
+       <a href="{{route('epreuve.show', $epreuve->id)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-eye"></i></a>
         @auth 
         <a href="{{route('epreuve.edit',$epreuve->id)}}" class="btn btn-sm btn-primary mb-1">
   <i class="bi bi-pencil-square"></i>
 </a>
-      </div>
+@endauth
+    </div>
+  </div>
       
-      @endauth
-    </li>
+
+    
 @endforeach
-  </ul>
+
   &nbsp;
   
   
