@@ -1,8 +1,14 @@
 @extends('template')
 @section('title')  Equipe numéro {{$classement3->id}} @endsection
 @section('content')
+
 <i></i>
-<strong>{{$classement3->idEquipeC3}}</strong>
-<br/>
+<strong>Numéro de l'équipe: </strong> <p style="text-align:right; ">{{$classement3->idEquipec3}}</p>
+
+<strong>Nom de l'équipe:</strong> <p style="text-align:right; ">{{$classement3->equipe->NomEquipe}}</p>
+
+<strong>Slogan: </strong><p style="text-align:right; ">{{$classement3->equipe->Slogan }}</p>
+<br>
 <a href="{{url('classement3/')}}">Retour à la liste</a>
+
 @endsection

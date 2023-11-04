@@ -5,7 +5,7 @@
 <i></i>
 <strong>Numéro de l'équipe: </strong> <p style="text-align:right; ">{{$classement1->idEquipeC}}</p>
 
-<strong>Nom de l'équipe:</strong> <p style="text-align:right; ">{{$classement1->equipe->NomEquipe }}</p>
+<strong>Nom de l'équipe:</strong> <p style="text-align:right; ">{{$classement1->equipe->NomEquipe}}</p>
 
 <strong>Slogan: </strong><p style="text-align:right; ">{{$classement1->equipe->Slogan }}</p>
 <br>
