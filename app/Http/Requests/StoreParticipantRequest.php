@@ -28,11 +28,11 @@ class StoreParticipantRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'idParticipant' => ['required'],
+            'idParticipant' => ['required','unique'],
             'NomP' => ['required'],
             'PrenomP' => ['required'],
             'DateDeNaissance' => ['required'],
-            'NumeroEtudiant' => ['required'],
+            'NumeroEtudiant' => ['required','unique'],
             'idComposante' => ['required']
 
         ];
@@ -46,7 +46,8 @@ class StoreParticipantRequest extends FormRequest
                 'DateDeNaissance.required' => 'Il faut spécifier une date de naissance au format YYYY-MM-JJ !',
                 'NumeroEtudiant.required' => 'Il faut spécifier un numéro étudiant (une deuxième fois) !',
                 'idComposante.required' => 'Il faut spécifier une composante !',
-
+                'idParticipant.unique' => 'le numéro saisi a déjà été inscrit !',
+                'idNumeroEtudiant.unique' => 'le numéro saisi a déjà été inscrit !'
             ];
     }
     public function attributes()

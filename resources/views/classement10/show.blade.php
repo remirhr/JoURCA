@@ -3,7 +3,7 @@
 @section('content')
 
 <i></i>
-<strong>Numéro de l'équipe: </strong> <p style="text-align:right; ">{{$classement10->idEquipec10}}</p>
+<strong>Numéro de l'équipe: </strong> <p style="text-align:right; ">{{$classement10->idEquipeC10}}</p>
 
 <strong>Nom de l'équipe:</strong> <p style="text-align:right; ">{{$classement10->equipe->NomEquipe}}</p>
 

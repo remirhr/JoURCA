@@ -22,13 +22,15 @@ class StoreClassement2Request extends FormRequest
     public function rules(): array
     {
         return [
-            'idEquipeC2' => ['required']
+            'idEquipeC2' => ['required','unique']
         ];
     }
     public function messages()
     {
         return [
                 'idEquipeC2.required' => 'Il faut spécifier un numéro d\équipe !'
+                ,
+                'idEquipeC2.unique' => 'le numéro d\équipe est déjà dans le classement !'
             ];
     }
     public function attributes()

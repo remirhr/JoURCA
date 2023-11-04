@@ -61,7 +61,7 @@
   <div class="mb-3">
     <div class="offset-sm-2 col-sm-10">
       <button class="btn btn-primary mb-1 mr-1" type="submit">Ajouter</button>
-    
+      <a href="{{url('resultat/')}}" class="btn btn-danger mb-1">Annuler</a>
     </div>
   </div>
 </form>

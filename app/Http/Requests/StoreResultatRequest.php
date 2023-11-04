@@ -22,7 +22,7 @@ class StoreResultatRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'NomEquipe' => ['required', 'max:100'],
+            'NomEquipe' => ['required', 'max:100','unique'],
                 'Slogan' => ['required'],
                 'idParticipant1' => ['required'],
                 'idComposante' => ['required']
@@ -36,7 +36,8 @@ class StoreResultatRequest extends FormRequest
             'NomEquipe.required' => 'Il faut spécifier un nom',
             'Slogan.required' => 'Il faut spécifier un slogan',
             'idParticipant1.required' => 'Il faut un membre',
-            'idComposante' => 'Il faut une composante'
+            'idComposante' => 'Il faut une composante',
+            'NomEquipe.unique' => 'Quelqu\'un a déjà prit votre idée...'
             ];
     }
     public function attributes()
