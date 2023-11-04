@@ -30,6 +30,9 @@ use App\Http\Controllers\Classement1Controller;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/register', function () {
+    return view('auth/register');
+})->name('register');
 Route::get('composantes/random', [ComposanteController::class, 'random']);
 Route::resource('composantes/random', ComposanteController::class);
 Route::resource('composantes', ComposanteController::class);

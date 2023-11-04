@@ -27,6 +27,7 @@
   <span>
    
 @auth
+
    <!--btn btn-sm btn-primary mb-2 mr-2-->
    <a href="{{url('resultat/')}}" class="button-54">
     Equipes
@@ -61,13 +62,10 @@
   @csrf
 </form>
 &nbsp;
-
-<div class="row row-cols-1 row-cols-md-5 g-4">
+<div class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
 @foreach($epreuveList as $epreuve)
 
 &nbsp;
-
-   
 <div class="col">
     <div class="card">
       <img src="{{$epreuve->img}}" class="card-img-top" height="300px">
@@ -85,11 +83,11 @@
 @endauth
     </div>
   </div>
-      
 
-    
 @endforeach
-
+<a href="{{url('register')}}" class="button-54">
+    Créer un user 
+  </a>
   &nbsp;
   
   

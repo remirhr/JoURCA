@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="style1.css">
   </head>
   <body>
-    <div class="container">
-      <div class="card mt-4"><!--card-header bg-primary text-white text-center-->
-        <div class="button-53">@yield('title')</div>
-        <div style="background-color:#12142B;   color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
+    <div stye="border-color:black;" class="container">
+      <div stye="border-color:black;" class="card mt-4"><!--card-header bg-primary text-white text-center-->
+        <div stye="border-color:black;" class="button-53">@yield('title')</div>
+        <div style="background-color:#12142B;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
       </div>
     </div>
     
@@ -23,6 +23,7 @@
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   color: #F2C52C;
   cursor: pointer;
   border: 3px solid;
@@ -33,6 +34,13 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   border-radius: 25px;
+}
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #12142B;
 }
 
 .button-54:active {
@@ -95,7 +103,7 @@
 }
 body {
   
-  background-image:url("img/wave.svg");
+  background-color:#12142B;
   background-size: auto;
 background-repeat: repeat-x ;
 
