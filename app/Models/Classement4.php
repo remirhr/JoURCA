@@ -15,6 +15,6 @@ class Classement4 extends Model
         
     ];
     public function equipe() : BelongsTo {
-        return $this->belongsTo(Equipe::class);
+        return $this->belongsTo(Equipe::class,'idEquipeC4');
       }
 }

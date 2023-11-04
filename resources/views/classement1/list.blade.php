@@ -39,12 +39,14 @@
   <i class="bi bi-vector-pen"></i>
   @endauth
 </a>
+
 <!--
 <button type="submit" formaction="{{route('classement1.destroy', $classement1->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
   <i class="bi bi-trash"></i>
 </button>-->
     </li>
 @endforeach
+<a href="{{url('epreuve/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour à la liste</a>
   </ul>
- 
+  
 @endsection
