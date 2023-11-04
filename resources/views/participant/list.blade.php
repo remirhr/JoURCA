@@ -61,10 +61,11 @@ elseif($comp==3){
       </div> 
          
       <div class="col text-end">
-        <a href="{{route('participant.show', $participant->idParticipant)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-eye"></i></a>
+        <a href="{{route('participant.show', $participant->idParticipant)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-aspect-ratio"></i></a>
+        &nbsp;
         @auth 
         <a href="{{route('participant.edit',$participant->idParticipant)}}" class="btn btn-sm btn-primary mb-1">
-  <i class="bi bi-pencil-square"></i>
+        <i class="bi bi-vector-pen"></i>
 </a>
 <button type="submit" formaction="{{route('participant.destroy', $participant->idParticipant)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
   <i class="bi bi-trash"></i>

@@ -2,7 +2,7 @@
 @section('title') {{$epreuve->title}} @endsection
 @section('content')
 <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="../{{$epreuve->img}}" alt="Card image cap">
+  <img class="card-img-top" src="../{{$epreuve->img}}" alt="">
   <div class="card-body">
     <h5 class="card-title"><strong>{{$epreuve->title}}</strong></h5>
     <p class="card-text">{{$epreuve->description}}</p>

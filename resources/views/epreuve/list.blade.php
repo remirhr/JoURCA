@@ -75,10 +75,12 @@
         <h5 class="card-title"><strong>{{$epreuve->title}}</strong></h5>
         <p class="card-text">{{$epreuve->description}}</p>
       </div>
-       <a href="{{route('epreuve.show', $epreuve->id)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-eye"></i></a>
+       <a href="{{route('epreuve.show', $epreuve->id)}}"  class="btn btn-sm btn-primary mb-1"><i class="bi bi-aspect-ratio"></i></a>
+       
         @auth 
         <a href="{{route('epreuve.edit',$epreuve->id)}}" class="btn btn-sm btn-primary mb-1">
-  <i class="bi bi-pencil-square"></i>
+        <i class="bi bi-vector-pen"></i>
+
 </a>
 @endauth
     </div>

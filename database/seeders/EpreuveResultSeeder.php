@@ -38,7 +38,7 @@ class EpreuveResultSeeder extends Seeder
                     [
               'title' => 'Handball 6/6',
               'description' => "Lundi 12 février de 18h à 22h, 8 équipes de 6 s'affronteront dans le GU (plateau C) CAMPUS MDH. Pas de tribunes disponibles",
-              'img' => 'img/handball2.png'
+              'img' => 'img/handball2.jpg'
         ],
         [
               'title' => 'Sumo',
