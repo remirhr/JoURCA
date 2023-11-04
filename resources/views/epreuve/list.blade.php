@@ -95,6 +95,7 @@
   </ul>
   &nbsp;
   
+  
 @endsection
 @section('javaScript')
 function recherche() {
