@@ -3,15 +3,7 @@
 @section('content')
 <form action="{{url('participant')}}" method="post">
 @csrf
-@if($errors->any())
-  <div class="alert alert-danger">
-    <ul class="mb-0">
-      @foreach($errors->all() as $error)
-        <li>{{ $error }}</li>
-      @endforeach
-    </ul>
-  </div>
-@endif
+
   <div class="mb-3 row">
     <label for="idParticipant" class="col-sm-2 col-form-label">Numéro du Participant (numéro étudiant) </label>
     <div class="col-sm-10">

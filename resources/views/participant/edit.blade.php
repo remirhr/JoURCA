@@ -15,7 +15,7 @@
 <form action="{{url('participant', $participant->id)}}" method="post">
   @csrf
   @method('PUT')
-  <div class="mb-3 row col-30">
+  <div class="mb-3 row">
     <label for="id" class="col-sm-10 col-form-label">Numéro du Participant (numéro étudiant) </label>
     <div class="col-sm-10">
       <input type="text" class="form-control" name="id" id="id" placeholder="Saisir le numéro du participant (numéro étudiant)." value="{{$participant->id}}"/>
