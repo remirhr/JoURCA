@@ -7,6 +7,7 @@
   @csrf
 </form>
 @foreach($classement1List as $classement1)
+<div class="hover">
     <li class="list-group-item d-flex align-items-center">
       <div class="col-lg-10">
         <span class="">
@@ -70,6 +71,7 @@
                                                               }
                                                               else {}
         ?>
+
         <img src="{{$pathimg}}" width="50" height="50"/>
         <strong>{{$classement1->equipe->NomEquipe}}</strong>
         {{$classement1->equipe->Slogan}}
@@ -98,7 +100,7 @@
   @endcan
   @endauth
 </a>
-
+                                                            </div>
 <!--
 <button type="submit" formaction="{{route('classement1.destroy', $classement1->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
   <i class="bi bi-trash"></i>

@@ -7,6 +7,7 @@
   @csrf
 </form>
 @foreach($classement3List as $classement3)
+<div class="hover">
     <li class="list-group-item d-flex align-items-center">
       <div class="col-lg-10">
         <span class="">
@@ -94,6 +95,7 @@
 </a>
 
     </li>
+                                                          </div>
 @endforeach
 <a href="{{url('epreuve/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour à la liste</a>
   </ul>
