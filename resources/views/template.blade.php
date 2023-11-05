@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>@yield('title')</title>
+    <title>Jeux de l'URCA 2024</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -17,6 +17,7 @@
 
       <img src="img/univlogo.png"  width="285" height="54">
 </a>
+
 <a class="navbar-brand" href="https://www.univ-reims.fr/vie-des-campus/actualites/jeux-de-l-urca-2024,10227,18297.html?args=_1Q7ZDyTGr_aYnJ6eSkKbjvGobgYR4YHCAuoCjfmJHNdadljx7BZnq3LOLKoPSThBNGLhb8IlQCw%2AO54ubSfbq2Id1e74NSXx%2AaYxjKQeTPP2Ai0yh_z8lMdDXjVsBON">
       <img src="img/jeuxdelurcaclr-removebg-preview.png"  width="65" height="65">
       </a>
@@ -25,13 +26,17 @@
   
 </nav>
     </div>
+    
 
     <div stye="border-color:black; margin-top:-10px;margin:-10px;margin-bottom:-10px;" class="container">
       <div stye="border-color:black; margin-top:-10px;margin:-10px;margin-bottom:-10px;" class="card mt-4">
         <div stye="border-color:black;margin-top:-10px; margin:-10px;margin-bottom:-10px;;" class="">@yield('title')</div>
-        <div style="background-color:#12142B;  margin:-5px;margin:-10px;margin-bottom:-10px;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
+        <div style="background-color:#12142B;margin:-10px;margin-bottom:-10px;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
       </div>
     </div>
+   
+
+
     
     <style>
 .button-54 {
