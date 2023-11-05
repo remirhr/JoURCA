@@ -98,7 +98,8 @@
     </li>
                                                      
 @endforeach
-<a href="{{url('epreuve/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour à la liste</a>
+&nbsp;
+<a href="{{url('epreuve/')}}" class="button-34">Retour à la liste</a>
   </ul>
  
 @endsection
