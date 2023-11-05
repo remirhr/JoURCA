@@ -81,9 +81,11 @@
   
        
         @auth 
+        @can('update-epreuve')
         <a href="{{route('epreuve.edit',$epreuve->id)}}" class="btn btn-sm btn-primary mb-1">
         <i class="bi bi-vector-pen"></i>
 </a>
+@endcan
 @endauth
   </div>
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreResultatRequest;
 use App\Models\Equipe;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class ResultatController extends Controller
 {
@@ -13,7 +14,7 @@ class ResultatController extends Controller
      */
     public function index()
     {
-        $resultatList = Equipe::orderBy('id')->take(3)->get();        
+        $resultatList = Equipe::orderBy('id')->take(100000)->get();        
 return view('resultat.list', ['resultatList' => $resultatList]);
     }
 
