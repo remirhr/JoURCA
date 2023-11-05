@@ -33,7 +33,7 @@ elseif($comp==3){
                             $path= "img/img/esireims.png";
                             }elseif($comp==10){
                                 $path= "img/cdc.png";
-                                }elseif($comp=11){
+                                }elseif($comp==11){
                                     $path= "img/pharma.jpeg'";
                                     }elseif($comp==12){
                                         $path= "img/institut.png";
@@ -43,9 +43,11 @@ elseif($comp==3){
                                                 $path= "img/iuttroyes.png";
                                                 }elseif($comp==15){
                                                     $path= "img/inspe.png";
-                                                    }else{
-                                                        $path= "img/cdc.png";
-                                                        }
+                                                    }elseif($comp==16){
+                                                      $path= "img/cdc.png";
+                                                      }else{
+                                                        $path= "img/default.png";
+                                                      }
 ?>
     <li class="list-group-resultat d-flex align-resultats-center">
       <div class="col-lg-10">
