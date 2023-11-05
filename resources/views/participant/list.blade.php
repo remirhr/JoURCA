@@ -49,6 +49,7 @@ elseif($comp==3){
                                                         $path= "img/cdc.png";
                                                         }
 ?>
+<div class="hover">
     <li class="list-group-epreuve d-flex align-epreuves-center">
       <div class="col-lg-10">
         <span class="">
@@ -61,13 +62,14 @@ elseif($comp==3){
       </div> 
          
       <div class="col text-end">
-        <a href="{{route('participant.show', $participant->idParticipant)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-aspect-ratio"></i></a>
+      
         &nbsp;
+                                                      </div>
         @auth 
-        <a href="{{route('participant.edit',$participant->idParticipant)}}" class="btn btn-sm btn-primary mb-1">
+        <a href="{{route('participant.edit',$participant->id)}}" class="btn btn-sm btn-primary mb-1">
         <i class="bi bi-vector-pen"></i>
 </a>
-<button type="submit" formaction="{{route('participant.destroy', $participant->idParticipant)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
+<button type="submit" formaction="{{route('participant.destroy', $participant->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
   <i class="bi bi-trash"></i>
 </button>
       </div>

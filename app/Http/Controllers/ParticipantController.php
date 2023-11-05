@@ -13,7 +13,7 @@ class ParticipantController extends Controller
      */
     public function index()
     {
-        $participantList = Participant::orderBy('idParticipant')->take(10000000)->get();        
+        $participantList = Participant::orderBy('id')->take(10000000)->get();        
          return view('participant.list', ['participantList' => $participantList]);
     }
 
@@ -41,17 +41,17 @@ class ParticipantController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $idParticipant)
     {
-        return view('participant.show', ['participant' => Participant::findOrFail($id)]);
+        return view('participant.show', ['participant' => Participant::findOrFail($idParticipant)]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $idParticipant)
     {
-        return view('participant.edit', ['participant' => Participant::findOrFail($id)]);
+        return view('participant.edit', ['participant' => Participant::findOrFail($idParticipant)]);
     }
 
     /**

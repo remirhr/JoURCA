@@ -28,7 +28,7 @@ class StoreParticipantRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'idParticipant' => ['required','unique'],
+            'id' => ['required','unique'],
             'NomP' => ['required'],
             'PrenomP' => ['required'],
             'DateDeNaissance' => ['required'],
@@ -40,7 +40,7 @@ class StoreParticipantRequest extends FormRequest
     public function messages()
     {
         return [
-                'idParticipant.required' => 'Il faut spécifier un numéro étudiant !',
+                'id.required' => 'Il faut spécifier un numéro étudiant !',
                 'NomP.required' => 'Il faut spécifier un nom de famille !',
                 'PrenomP.required' => 'Il faut spécifier un prénom !',
                 'DateDeNaissance.required' => 'Il faut spécifier une date de naissance au format YYYY-MM-JJ !',
@@ -53,7 +53,7 @@ class StoreParticipantRequest extends FormRequest
     public function attributes()
     {
         return [
-            'idParticipant' =>'idParticipant',
+            'id' =>'id',
             'NomP' => 'NomP',
             'PrenomP' => 'PrenomP' ,
             'DateDeNaissance' => 'DateDeNaissance',

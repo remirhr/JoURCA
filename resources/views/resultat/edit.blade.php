@@ -64,7 +64,7 @@
   <div class="mb-3 row">
     <label for="idComposante" class="col-sm-2 col-form-label">Numéro de la composante</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="idComposante" id="idComposante" placeholder="1 : SEN | 2 : LSH | 3 : EiSINe | 4 : SESG | 5 : DSP | 6 : STAPS | 7 : Médecine | 8 : CdC | 9 : ESIReims | 10 : Odonto | 11 : Pharma | 12 : Institut G.Chappaz13IUT | 13 : IUT RCC | 14 : IUT Troyes | 15 : Inspé | 16 : Siège" />
+      <input type="text" class="form-control" name="idComposante" id="idComposante" row="4" placeholder="1 : SEN | 2 : LSH | 3 : EiSINe | 4 : SESG | 5 : DSP | 6 : STAPS | 7 : Médecine | 8 : CdC | 9 : ESIReims | 10 : Odonto | 11 : Pharma | 12 : Institut G.Chappaz13IUT | 13 : IUT RCC | 14 : IUT Troyes | 15 : Inspé | 16 : Siège" />
     </div>
   </div>
   </div>

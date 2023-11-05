@@ -23,7 +23,7 @@ class ParticipantSeeder extends Seeder
         DB::table('participants')->delete();
         $participant = [
             [
-                'idParticipant' => '22200942',
+                'id' => '22200942',
                 'NomP' => 'Rahir',
                 'PrenomP' =>  'Rémi',
                 'DateDeNaissance'=> '2004-09-22',

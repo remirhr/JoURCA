@@ -13,17 +13,17 @@ return new class extends Migration
     {
         Schema::table('equipes', function (Blueprint $table) {
             $table->unsignedBigInteger('idParticipant1')->nullable();
-            $table->foreign('idParticipant1')->references('idParticipant')->on('participants');
+            $table->foreign('idParticipant1')->references('id')->on('participants');
             $table->unsignedBigInteger('idParticipant2')->nullable();
-            $table->foreign('idParticipant2')->references('idParticipant')->on('participants');
+            $table->foreign('idParticipant2')->references('id')->on('participants');
             $table->unsignedBigInteger('idParticipant3')->nullable();
-            $table->foreign('idParticipant3')->references('idParticipant')->on('participants');
+            $table->foreign('idParticipant3')->references('id')->on('participants');
             $table->unsignedBigInteger('idParticipant4')->nullable();
-            $table->foreign('idParticipant4')->references('idParticipant')->on('participants');
+            $table->foreign('idParticipant4')->references('id')->on('participants');
             $table->unsignedBigInteger('idParticipant5')->nullable();
-            $table->foreign('idParticipant5')->references('idParticipant')->on('participants');
+            $table->foreign('idParticipant5')->references('id')->on('participants');
             $table->unsignedBigInteger('idParticipant6')->nullable();
-            $table->foreign('idParticipant6')->references('idParticipant')->on('participants');
+            $table->foreign('idParticipant6')->references('id')->on('participants');
         });
     }
 

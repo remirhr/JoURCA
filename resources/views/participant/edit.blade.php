@@ -12,13 +12,13 @@
     </div>
 @endif
 
-<form action="{{url('participant', $participant->idParticipant)}}" method="post">
+<form action="{{url('participant', $participant->id)}}" method="post">
   @csrf
   @method('PUT')
-  <div class="mb-3 row">
-    <label for="idParticipant" class="col-sm-2 col-form-label">Numéro du Participant (numéro étudiant) </label>
+  <div class="mb-3 row col-30">
+    <label for="id" class="col-sm-10 col-form-label">Numéro du Participant (numéro étudiant) </label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="idParticipant" id="idParticipant" placeholder="Saisir le numéro du participant (numéro étudiant)." value="{{$participant->idParticipant}}"/>
+      <input type="text" class="form-control" name="id" id="id" placeholder="Saisir le numéro du participant (numéro étudiant)." value="{{$participant->id}}"/>
     </div>
   </div>
   <div class="mb-3 row">
@@ -48,13 +48,13 @@
   <div class="mb-3 row">
     <label for="idComposante" class="col-sm-2 col-form-label">Numéro de la composante</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="idComposante" id="idComposante" placeholder="1 : SEN | 2 : LSH | 3 : EiSINe | 4 : SESG | 5 : DSP | 6 : STAPS | 7 : Médecine | 8 : CdC | 9 : ESIReims | 10 : Odonto | 11 : Pharma | 12 : Institut G.Chappaz13IUT | 13 : RCC | 14 : IUT Troyes | 15 : Inspé | 16 : Siège" />
+      <input type="text" class="form-control" name="idComposante" id="idComposante" row="4" placeholder="1 : SEN | 2 : LSH | 3 : EiSINe | 4 : SESG | 5 : DSP | 6 : STAPS | 7 : Médecine | 8 : CdC | 9 : ESIReims | 10 : Odonto | 11 : Pharma | 12 : Institut G.Chappaz13IUT | 13 : RCC | 14 : IUT Troyes | 15 : Inspé | 16 : Siège" />
     </div>
   </div>
   <div class="mb-3">
     <div class="offset-sm-2 col-sm-10">
       <button class="btn btn-primary mb-1 mr-1" type="submit">Modifier</button>
-      <a href="{{route('epreuve.show',$epreuve->id)}}" class="btn btn-danger mb-1">Annuler</a>
+      <a href="{{url('participant/')}}" class="btn btn-danger mb-1">Annuler</a>
     </div>
   </div>
 </form>
