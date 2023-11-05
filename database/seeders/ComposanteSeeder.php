@@ -59,7 +59,7 @@ class ComposanteSeeder extends Seeder
             ],
             [
                 'title' => 'Pharma',
-                'img'=>'img/pharma.jpeg'
+                'img'=>'img/pharma.jpg'
             ],
             [
                 'title' => 'Institut G.Chappaz',

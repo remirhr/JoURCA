@@ -29,8 +29,8 @@ class EquipeSeeder extends Seeder
         DB::table('equipes')->delete();
         $equipe = [
             [
-                'NomEquipe' => 'ThaBeast1',
-                'Slogan' =>  'Here for ',
+                'NomEquipe' => '',
+                'Slogan' =>  '',
          
                 'idParticipant1' => '22200942',
                 'idParticipant2' => '22200942',
@@ -41,8 +41,8 @@ class EquipeSeeder extends Seeder
                 'idComposante' => '17'
             ],
             [
-                'NomEquipe' => 'ThaBeast2',
-                'Slogan' =>  'Here for the win',
+                'NomEquipe' => '',
+                'Slogan' =>  '',
             
                 'idParticipant1' => '22200942',
                 'idParticipant2' => '22200942',
@@ -52,8 +52,8 @@ class EquipeSeeder extends Seeder
                 'idParticipant6' => '22200942',
                 'idComposante' => '17'
             ],[
-                'NomEquipe' => 'ThaBeast3',
-                'Slogan' =>  'Here ',
+                'NomEquipe' => '',
+                'Slogan' =>  '',
                
                 'idParticipant1' => '22200942',
                 'idParticipant2' => '22200942',

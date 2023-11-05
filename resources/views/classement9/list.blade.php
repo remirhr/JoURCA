@@ -53,7 +53,7 @@
                                   $pathimg= "img/img/esireims.png";
                                   }elseif($img==10){
                                       $pathimg= "img/cdc.png";
-                                      }elseif($img=11){
+                                      }elseif($img==11){
                                           $pathimg= "img/pharma.jpeg'";
                                           }elseif($img==12){
                                               $pathimg= "img/institut.png";
@@ -74,7 +74,7 @@
         {{$classement9->equipe->Slogan}}
       </div>         
       <div class="col text-end">
-        <a href="{{route('classement9.show', $classement9->id)}}" class="btn btn-sm btn-primary mb-1"><i class="bi bi-aspect-ratio"></i></a>
+        <a href="{{route('classement9.show', $classement9->id)}}" class="stretched-link"></a>
       </div>
       &nbsp;
       @auth
