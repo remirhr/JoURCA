@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style1.css">
   </head>
   <body>
-  <div>
+  <div class="" style="margin-bottom:-10px;">
       <nav style="background-color:#12142B; border:-10px; margin-top:-10px;margin-bottom:-10px;" class="navbar navbar-expand-lg bg-body-tertiary">
-  <div style="background-color:#12142B;" class="container-fluid">
+  <div style="background-color:#12142B;margin-bottom:-10px;" class="container-fluid">
   <a class="navbar-brand" href="https://www.univ-reims.fr/">
       <img src="img/Logo_republique.png" style="margin-left:5px; margin-top:5px;" width="95" height="84">
 
@@ -26,9 +26,9 @@
 </nav>
     </div>
 
-    <div stye="border-color:black; margin:-10px;margin-bottom:-10px;" class="container">
-      <div stye="border-color:black; margin:-10px;margin-bottom:-10px;" class="card mt-4">
-        <div stye="border-color:black margin:-10px;margin-bottom:-10px;;" class="">@yield('title')</div>
+    <div stye="border-color:black; margin-top:-10px;margin:-10px;margin-bottom:-10px;" class="container">
+      <div stye="border-color:black; margin-top:-10px;margin:-10px;margin-bottom:-10px;" class="card mt-4">
+        <div stye="border-color:black;margin-top:-10px; margin:-10px;margin-bottom:-10px;;" class="">@yield('title')</div>
         <div style="background-color:#12142B;  margin:-5px;margin:-10px;margin-bottom:-10px;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
       </div>
     </div>
