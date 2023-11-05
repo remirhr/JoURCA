@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use SoftDeletes;
 class Equipe extends Model
 {
     use HasFactory;
@@ -19,6 +20,12 @@ class Equipe extends Model
         'idParticipant5',
         'idParticipant6',
         'idComposante'
+    ];
+    protected $dates = [
+      'created_at',
+      'deleted_at',
+      'started_at',
+      'update_at'
     ];
     public function participants() : BelongsTo {
         return $this->belongsTo(Participant::class);
@@ -72,4 +79,5 @@ class Equipe extends Model
       public function Classement15() : HasMany {
         return $this->hasMany(Classement15::class);
       }
+    
 }
