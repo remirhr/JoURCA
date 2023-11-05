@@ -24,8 +24,14 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Gate::define('update-epreuve', function (User $user){
+        Gate::define('admin', function (User $user){
                 return $user->isAdmin();
         });
+        Gate::define('orga', function (User $user){
+            return $user->isOrga();
+    });
+    Gate::define('editor', function (User $user){
+        return $user->isEditor();
+});
     }
 }

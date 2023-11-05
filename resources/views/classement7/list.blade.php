@@ -76,9 +76,12 @@
       </div>
       &nbsp;
       @auth
+      @can('admin','orga','editor')
       <a href="{{route('classement7.edit',$classement7->id)}}" class="btn btn-sm btn-primary mb-1">
   <i class="bi bi-vector-pen"></i>
+  @endcan
   @endauth
+
 </a>
 <!--
 <button type="submit" formaction="{{route('classement1.destroy', $classement7->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">

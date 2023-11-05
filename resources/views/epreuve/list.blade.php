@@ -27,20 +27,23 @@
   <span>
    
 @auth
-
+@can('admin','orga')
    <!--btn btn-sm btn-primary mb-2 mr-2-->
    <a href="{{url('resultat/')}}" class="button-54">
     Equipes
   </a>
+  @endcan
   &nbsp;
   &nbsp;
     <button type="submit" form="formLogout" class="button-red">
       Déconnexion
     </button>
     &nbsp;
+    @can('admin','orga')
   <a href="{{url('participant/')}}" class="button-54">
     Participants
   </a>
+  @endcan
 
 
 
@@ -81,7 +84,7 @@
   
        
         @auth 
-        @can('update-epreuve')
+        @can('admin')
         <a href="{{route('epreuve.edit',$epreuve->id)}}" class="btn btn-sm btn-primary mb-1">
         <i class="bi bi-vector-pen"></i>
 </a>
@@ -90,9 +93,13 @@
   </div>
 
 @endforeach
+@auth
+@can('admin')
 <a href="{{url('register')}}" class="button-54">
     Créer un user 
   </a>
+  @endcan
+  @endauth
   &nbsp;
   
   

@@ -76,8 +76,10 @@
       </div>
       &nbsp;
       @auth
+      @can('admin','orga','editor')
       <a href="{{route('classement10.edit',$classement10->id)}}" class="btn btn-sm btn-primary mb-1">
   <i class="bi bi-vector-pen"></i>
+  @endcan
   @endauth
 </a>
 

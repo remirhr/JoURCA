@@ -13,7 +13,5 @@ class EpreuveResult extends Model
         'description',
         'img'
     ];
-    public function isAdmin(){
-        return false;
-    }
+    
 }

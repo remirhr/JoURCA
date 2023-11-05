@@ -37,6 +37,10 @@
                 <x-label for="password_confirmation" value="{{ __('Confirmer le mot de passe') }}" />
                 <x-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
+            <div class="mt-4">
+                <x-label for="role" placeholder="1 Admin, 2 Organisateur, 3 Editeur de podium" value="{{ __('Role') }}" />
+                <x-input id="role" class="block mt-1 w-full" placeholder="(1) Admin | (2) Organisateur | (3) Editeur de podium" type="text" name="role" />
+            </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
                 <div class="mt-4">

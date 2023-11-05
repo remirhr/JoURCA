@@ -27,6 +27,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
     /**
@@ -59,6 +60,24 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
     public function isAdmin(){
-        return false;
+        if ($this->role == 1) {
+        return true;}
+        else {
+            return false;
+        }
+    }
+    public function isOrga(){
+        if ($this->role == 2) {
+        return true;}
+        else {
+            return false;
+        }
+    }
+    public function isEditor(){
+        if ($this->role == 3) {
+        return true;}
+        else {
+            return false;
+        }
     }
 }
