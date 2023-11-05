@@ -13,7 +13,7 @@
       <nav style="background-color:#12142B; border:-10px; margin-top:-10px;margin-bottom:-10px;" class="navbar navbar-expand-lg bg-body-tertiary">
   <div style="background-color:#12142B;" class="container-fluid">
   <a class="navbar-brand" href="https://www.univ-reims.fr/">
-      <img src="img/Logo_republique.png" style="margin-left:5px; margin-top:5px;" width="80" height="84">
+      <img src="img/Logo_republique.png" style="margin-left:5px; margin-top:5px;" width="95" height="84">
 
       <img src="img/univlogo.png"  width="285" height="54">
 </a>
