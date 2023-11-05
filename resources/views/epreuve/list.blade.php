@@ -83,7 +83,7 @@
 
 &nbsp;
 
-<div class="col" style="display: flex;" >
+<div class="col " style="display: flex; margin-bottom:25px;margin-left:20px; margin-right:20px; " >
   <div class="hover" style="display: flex;">
     <div class="card" style="display: flex;">
       <img src="{{$epreuve->img}}" class="card-img-top" height="300px">
