@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') {{$epreuve->title}} @endsection
+@section('title')@endsection
 @section('content')
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="../{{$epreuve->img}}" alt="">

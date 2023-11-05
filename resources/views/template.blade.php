@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="style1.css">
   </head>
   <body>
-    <div>
+  <div>
       <nav style="background-color:#12142B; border:-10px; margin-top:-10px;margin-bottom:-10px;" class="navbar navbar-expand-lg bg-body-tertiary">
   <div style="background-color:#12142B;" class="container-fluid">
   <a class="navbar-brand" href="https://www.univ-reims.fr/">
-      <img src="img/Logo_republique.png"  width="80" height="84">
+      <img src="img/Logo_republique.png" style="margin-left:5px; margin-top:5px;" width="80" height="84">
 
-      <img src="img/univlogo.png"  width="265" height="54">
+      <img src="img/univlogo.png"  width="285" height="54">
 </a>
 <a class="navbar-brand" href="https://www.univ-reims.fr/vie-des-campus/actualites/jeux-de-l-urca-2024,10227,18297.html?args=_1Q7ZDyTGr_aYnJ6eSkKbjvGobgYR4YHCAuoCjfmJHNdadljx7BZnq3LOLKoPSThBNGLhb8IlQCw%2AO54ubSfbq2Id1e74NSXx%2AaYxjKQeTPP2Ai0yh_z8lMdDXjVsBON">
       <img src="img/jeuxdelurcaclr-removebg-preview.png"  width="65" height="65">
@@ -25,6 +25,7 @@
   
 </nav>
     </div>
+
     <div stye="border-color:black; margin:-10px;margin-bottom:-10px;" class="container">
       <div stye="border-color:black; margin:-10px;margin-bottom:-10px;" class="card mt-4">
         <!--<div stye="border-color:black margin:-10px;margin-bottom:-10px;;" class="button-53">@yield('title')</div>-->
