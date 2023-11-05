@@ -83,13 +83,13 @@
 
 &nbsp;
 
-<div class="col">
-  <div class="hover">
-    <div class="card">
+<div class="col" style="display: flex;" >
+  <div class="hover" style="display: flex;">
+    <div class="card" style="display: flex;">
       <img src="{{$epreuve->img}}" class="card-img-top" height="300px">
       <div class="card-body">
       <a href="{{route('epreuve.show', $epreuve->id)}}" style="color:white;" class="stretched-link "><p>afficher</p></a>
-        <h5 class="card-title"><strong>{{$epreuve->title}}</strong></h5>
+        <h5 class="card-title" style="color:#FD411C;"><strong>{{$epreuve->title}}</strong></h5>
         <p class="card-text">{{$epreuve->description}}</p>
       </div>
 </div>

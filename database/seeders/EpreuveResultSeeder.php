@@ -42,27 +42,27 @@ class EpreuveResultSeeder extends Seeder
         ],
         [
               'title' => 'Sumo',
-              'description' => "Lundi 12 février de 18h à 22h, 6 équipes de 6 s'affronteront en salle de crossfit CAMPUS MDH.",
-              'img' => 'img/sumo2.png'
+              'description' => "Lundi 12 février de 18h à 22h, 6 équipes de 6 s'affronteront en salle de crossfit CAMPUS MDH.                             ",
+              'img' => 'img/sumo3.png'
         ],
         [
             'title' => 'Touch Rugby 4/4',
-              'description' => "Mardi 13 février de 18h à 22h, 8 équipes de 4 s'affronteront CAMPUS MDH.",
+              'description' => "Mardi 13 février de 18h à 22h, 8 équipes de 4 s'affronteront CAMPUS MDH.                                                  ",
               'img' => 'img/rugby2.png'
         ],
         [
             'title' => 'Laser Run',
-              'description' => "Mardi 13 février de 18h à 22h, 6 équipes de 6 s'affronteront en extérieur ou salle principale 3 à 6 CAMPUS MDH.",
+              'description' => "Mardi 13 février de 18h à 22h, 6 équipes de 6 s'affronteront en extérieur ou salle principale 3 à 6 CAMPUS MDH.          ",
               'img' => 'img/laserrun2.png'
         ],
         [
             'title' => 'Futsal',
-              'description' => "Mercredi 14 février de 18h à 22h, 8 équipes de 5 s'affronteront CAMPUS MDH.",
+              'description' => "Mercredi 14 février de 18h à 22h, 8 équipes de 5 s'affronteront CAMPUS MDH.                                              ",
               'img' => 'img/futsal2.png'
         ],
         [
             'title' => 'Palets bretons',
-            'description' => "Mercredi 14 février de 18h à 22h, 6 équipes s'affronteront en extérieur ou salle principale 3 à 6 CAMPUS MDH.",
+            'description' => "Mercredi 14 février de 18h à 22h, 6 équipes s'affronteront en extérieur ou salle principale 3 à 6 CAMPUS MDH.            ",
             'img' => 'img/paletsbretons.png'
         ],
         [
@@ -72,42 +72,42 @@ class EpreuveResultSeeder extends Seeder
         ],
         [
             'title' => "Badminton à l'italienne",
-            'description' => "Lundi 19 février de 18h à 22h, 36 équipes s'affronteront à l'italienne (3vs3) CAMPUS CR.",
+            'description' => "Lundi 19 février de 18h à 22h, 36 équipes s'affronteront à l'italienne (3vs3) CAMPUS CR.                                    ",
             'img' => 'img/badminton2.png'
         ],
         [
             'title' => "Relais Crossfit",
-            'description' => "Lundi 19 février de 18h à 22h, 6 équipes s'affronteront en équipe de 6 CAMPUS CR.",
+            'description' => "Lundi 19 février de 18h à 22h, 6 équipes s'affronteront en équipe de 6 CAMPUS CR.                                           ",
             'img' => 'img/crossfit2.png'
         ],
         [
             'title' => "Volley en 6/6",
-            'description' => "Mardi 20 février de 18h à 22h, 18 équipes s'affronteront en 6vs6 CAMPUS CR.",
-            'img' => 'img/volley2.png'
+            'description' => "Mardi 20 février de 18h à 22h, 18 équipes s'affronteront en 6vs6 CAMPUS CR.                                                 ",
+            'img' => 'img/volley3.png'
         ],
         [
             'title' => "Relais marathon par équipe",
-            'description' => "Mardi 20 février de 18h à 22h, 6 équipes s'affronteront de 4 à 6 HCR CAMPUS CR.",
+            'description' => "Mardi 20 février de 18h à 22h, 6 équipes s'affronteront de 4 à 6 HCR CAMPUS CR.                                              ",
             'img' => 'img/relais2.png'
         ],
         [
             'title' => "Tournois  e-sport",
-            'description' => "Mardi 20 février de 18h à 22h, 10 équipes de 6 s'affronteront CREPS.",
+            'description' => "Mardi 20 février de 18h à 22h, 10 équipes de 6 s'affronteront CREPS.                                                        ",
             'img' => 'img/esport.png'
         ],
         [
             'title' => "Basket 3/3",
-            'description' => "Mercredi 21 février de 18h à 22h, 12 équipes de 6 s'affronteront aux plateaux HCR 1/2 CAMPUS CR.",
+            'description' => "Mercredi 21 février de 18h à 22h, 12 équipes de 6 s'affronteront aux plateaux HCR 1/2 CAMPUS CR.                             ",
             'img' => 'img/basket2.png'
         ],
         [
             'title' => "Escalade de Vitesse",
-            'description' => "Mercredi 21 février de 18h à 22h, 6 équipes de 3 à 6 s'affronteront en relais traversées CAMPUS CR.",
+            'description' => "Mercredi 21 février de 18h à 22h, 6 équipes de 3 à 6 s'affronteront en relais traversées CAMPUS CR.                          ",
             'img' => 'img/escalade2.png'
         ],
         [
             'title' => "Finales",
-            'description' => "Jeudi 22 février de 13h à 18h tournoi, de 18h à 21h CEREMONIE DE CLOTURE CAMPUS CR.",
+            'description' => "Jeudi 22 février de 13h à 18h tournoi, de 18h à 21h CEREMONIE DE CLOTURE CAMPUS CR.                                           ",
             'img' => 'img/finale2.png'
         ],
     ];
