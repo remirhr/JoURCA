@@ -39,6 +39,41 @@
 
     
     <style>
+    .button-34 {
+  padding: 1.3em 3em;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #F2C52C;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-34:hover {
+  background-color: #BA9822;
+  /*
+  box-shadow: 0px 15px 20px rgba(186, 152, 34, 0.4);*/
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button-34:active {
+  transform: translateY(-1px);
+}
+
+@font-face {
+    font-family: 'MaPolice2';
+    src: url('/public/fonts/quicksand/Quicksand-Regular.ttf') format('ttf');
+    font-style: normal;
+        font-weight: normal;
+}
 .button-54 {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;

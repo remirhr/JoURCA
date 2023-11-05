@@ -59,7 +59,7 @@
 
 
 @else
-    <a href="{{ url('/login') }}" class="button-54">
+    <a href="{{ url('/login') }}" class="button-34">
       Connexion
     </a>
 
