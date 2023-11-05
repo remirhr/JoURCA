@@ -1,6 +1,5 @@
 @extends('template')
-@section('title') Jeux de l'URCA @endsection
-
+@section('title')@endsection
 @section('content')
 @section('head')
 
@@ -87,7 +86,40 @@
     <div class="card" style="display: flex;">
       <img src="{{$epreuve->img}}" class="card-img-top" height="300px">
       <div class="card-body">
-      <a href="{{route('epreuve.show', $epreuve->id)}}" style="color:white;" class="stretched-link "><p>afficher</p></a>
+          @if($epreuve->id == 1)
+<a href="{{url('classement1/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 2)
+<a href="{{url('classement2/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 3)
+<a href="{{url('classement3/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 4)
+<a href="{{url('classement4/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 5)
+<a href="{{url('classement5/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 6)
+<a href="{{url('classement6/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 7)
+<a href="{{url('classement7/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 8)
+<a href="{{url('classement8/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 9)
+<a href="{{url('classement9/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 10)
+<a href="{{url('classement10/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 11)
+<a href="{{url('classement11/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 12)
+<a href="{{url('classement12/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 13)
+<a href="{{url('classement13/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 14)
+<a href="{{url('classement14/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@elseif($epreuve->id == 15)
+<a href="{{url('classement15/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
+@else
+
+@endif
+   
       <!---webkit-text-stroke-width: 0.85px; -webkit-text-stroke-color: #440500;-->
         <h5 class="card-title" style="color:#FD411C; font-size:25px; "><strong>{{$epreuve->title}}</strong></h5>
         <p class="card-text">{{$epreuve->description}}</p>

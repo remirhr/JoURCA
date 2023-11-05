@@ -28,10 +28,11 @@
 
     <div stye="border-color:black; margin:-10px;margin-bottom:-10px;" class="container">
       <div stye="border-color:black; margin:-10px;margin-bottom:-10px;" class="card mt-4">
-        <!--<div stye="border-color:black margin:-10px;margin-bottom:-10px;;" class="button-53">@yield('title')</div>-->
+        <div stye="border-color:black margin:-10px;margin-bottom:-10px;;" class="">@yield('title')</div>
         <div style="background-color:#12142B;  margin:-5px;margin:-10px;margin-bottom:-10px;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
       </div>
     </div>
+    
     <style>
 .button-54 {
   font-family: "Open Sans", sans-serif;

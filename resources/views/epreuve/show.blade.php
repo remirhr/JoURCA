@@ -1,6 +1,14 @@
 @extends('template')
 @section('title')@endsection
 @section('content')
+@section('head')
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+  integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+  crossorigin="anonymous"></script>
+<script src="{{asset('storage/js/categories.js')}}"></script>
+@endsection 
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="../{{$epreuve->img}}" alt="">
   <div class="card-body">

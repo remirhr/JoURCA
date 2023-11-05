@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Podium @endsection
+
 @section('content')
   <ul class="list-group">
   <form id="deleteForm" action="" method="POST">
@@ -8,7 +8,7 @@
 </form>
 @foreach($classement14List as $classement14)
 <div class="hover">
-    <li class="list-group-item d-flex align-items-center">
+    <li class="list-group-item d-flex align-items-center" style="border-radius:5px;">
       <div class="col-lg-10">
         <span class="">
        <?php
