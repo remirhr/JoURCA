@@ -38,7 +38,7 @@ class EquipeSeeder extends Seeder
                 'idParticipant4' => '22200942',
                 'idParticipant5' => '22200942',
                 'idParticipant6' => '22200942',
-                'idComposante' => '1'
+                'idComposante' => '17'
             ],
             [
                 'NomEquipe' => 'ThaBeast2',
@@ -50,7 +50,7 @@ class EquipeSeeder extends Seeder
                 'idParticipant4' => '22200942',
                 'idParticipant5' => '22200942',
                 'idParticipant6' => '22200942',
-                'idComposante' => '1'
+                'idComposante' => '17'
             ],[
                 'NomEquipe' => 'ThaBeast3',
                 'Slogan' =>  'Here ',
@@ -61,7 +61,7 @@ class EquipeSeeder extends Seeder
                 'idParticipant4' => '22200942',
                 'idParticipant5' => '22200942',
                 'idParticipant6' => '22200942',
-                'idComposante' => '1'
+                'idComposante' => '17'
             ]
             ];
             Equipe::insert($equipe);

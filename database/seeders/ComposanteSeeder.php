@@ -80,6 +80,10 @@ class ComposanteSeeder extends Seeder
             [
                 'title' => 'Siège',
                 'img'=>'img/cdc.png'
+            ],
+            [
+                'title' => 'Default',
+                'img'=>'img/default.png'
             ]
             ];
             Composante::insert($composante);

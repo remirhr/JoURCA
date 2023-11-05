@@ -62,10 +62,12 @@
                                                   }elseif($img==14){
                                                       $pathimg= "img/iuttroyes.png";
                                                       }elseif($img==15){
-                                                          $pathimg= "img/inspe.png";
-                                                          }else{
-                                                              $pathimg= "img/cdc.png";
-                                                              }
+                                                          $pathimg= "img/inspe.png";}
+                                                          elseif($img==16){
+                                                            $pathimg= "img/cdc.png";
+                                                            }else{
+                                                              $pathimg= "img/default.png";
+                                                            }
         ?>
         <img src="{{$pathimg}}" width="50" height="50"/>
         <strong>{{$classement3->equipe->NomEquipe}}</strong>
