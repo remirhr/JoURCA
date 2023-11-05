@@ -63,12 +63,12 @@ class EpreuveResultSeeder extends Seeder
         [
             'title' => 'Palets bretons',
             'description' => "Mercredi 14 février de 18h à 22h, 6 équipes s'affronteront en extérieur ou salle principale 3 à 6 CAMPUS MDH.            ",
-            'img' => 'img/paletsbretons.png'
+            'img' => 'img/paletsbretons2.png'
         ],
         [
             'title' => 'Finales',
             'description' => "Jeudi 15 février de 13h à 18h, GU et salle de Crossfit CAMPUS MDH. \n 18h à 20H événement fin de semaines géré par com et BVE.",
-            'img' => 'img/finale2.png'
+            'img' => 'img/finale3.png'
         ],
         [
             'title' => "Badminton à l'italienne",
@@ -98,7 +98,7 @@ class EpreuveResultSeeder extends Seeder
         [
             'title' => "Basket 3/3",
             'description' => "Mercredi 21 février de 18h à 22h, 12 équipes de 6 s'affronteront aux plateaux HCR 1/2 CAMPUS CR.                             ",
-            'img' => 'img/basket2.png'
+            'img' => 'img/basket3.png'
         ],
         [
             'title' => "Escalade de Vitesse",
@@ -108,7 +108,7 @@ class EpreuveResultSeeder extends Seeder
         [
             'title' => "Finales",
             'description' => "Jeudi 22 février de 13h à 18h tournoi, de 18h à 21h CEREMONIE DE CLOTURE CAMPUS CR.                                           ",
-            'img' => 'img/finale2.png'
+            'img' => 'img/finale3.png'
         ],
     ];
         EpreuveResult::insert($epreuve);

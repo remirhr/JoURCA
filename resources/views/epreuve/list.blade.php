@@ -89,7 +89,8 @@
       <img src="{{$epreuve->img}}" class="card-img-top" height="300px">
       <div class="card-body">
       <a href="{{route('epreuve.show', $epreuve->id)}}" style="color:white;" class="stretched-link "><p>afficher</p></a>
-        <h5 class="card-title" style="color:#FD411C;"><strong>{{$epreuve->title}}</strong></h5>
+      <!---webkit-text-stroke-width: 0.85px; -webkit-text-stroke-color: #440500;-->
+        <h5 class="card-title" style="color:#FD411C; font-size:25px; "><strong>{{$epreuve->title}}</strong></h5>
         <p class="card-text">{{$epreuve->description}}</p>
       </div>
 </div>
