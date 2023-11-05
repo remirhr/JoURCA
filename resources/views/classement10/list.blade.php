@@ -76,7 +76,15 @@
       </div>
       &nbsp;
       @auth
-      @can('admin','orga','editor')
+      @can('admin')
+      <a href="{{route('classement10.edit',$classement10->id)}}" class="btn btn-sm btn-primary mb-1">
+  <i class="bi bi-vector-pen"></i>
+  @endcan
+  @can('orga')
+      <a href="{{route('classement10.edit',$classement10->id)}}" class="btn btn-sm btn-primary mb-1">
+  <i class="bi bi-vector-pen"></i>
+  @endcan
+  @can('editor')
       <a href="{{route('classement10.edit',$classement10->id)}}" class="btn btn-sm btn-primary mb-1">
   <i class="bi bi-vector-pen"></i>
   @endcan
