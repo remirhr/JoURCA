@@ -81,6 +81,7 @@
         <a href="{{route('classement1.show', $classement1->id)}}" class=" stretched-link"></a>
       </div>
       &nbsp;
+      </div>
       @auth
       
       @can('editor')
@@ -100,7 +101,7 @@
   @endcan
   @endauth
 </a>
-                                                            </div>
+                                                           
 <!--
 <button type="submit" formaction="{{route('classement1.destroy', $classement1->id)}}" form="deleteForm" class="btn btn-sm btn-danger mb-1">
   <i class="bi bi-trash"></i>

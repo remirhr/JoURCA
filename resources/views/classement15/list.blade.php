@@ -78,8 +78,17 @@
         <a href="{{route('classement15.show', $classement15->id)}}" class="stretched-link"></a>
       </div>
       &nbsp;
+      </div>
       @auth
-      @can('admin','orga','editor')
+      @can('admin')
+      <a href="{{route('classement15.edit',$classement15->id)}}" class="btn btn-sm btn-primary mb-1">
+  <i class="bi bi-vector-pen"></i>
+  @endcan
+  @can('orga')
+      <a href="{{route('classement15.edit',$classement15->id)}}" class="btn btn-sm btn-primary mb-1">
+  <i class="bi bi-vector-pen"></i>
+  @endcan
+  @can('editor')
       <a href="{{route('classement15.edit',$classement15->id)}}" class="btn btn-sm btn-primary mb-1">
   <i class="bi bi-vector-pen"></i>
   @endcan
@@ -87,7 +96,7 @@
 </a>
 
     </li>
-                                                          </div>
+                                                          
 @endforeach
 <a href="{{url('epreuve/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour à la liste</a>
   </ul>

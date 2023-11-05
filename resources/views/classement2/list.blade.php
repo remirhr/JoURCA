@@ -78,6 +78,7 @@
         <a href="{{route('classement2.show', $classement2->id)}}" class="stretched-link"></a>
       </div>
       &nbsp;
+      </div>
       @auth
       @can('admin')
       <a href="{{route('classement2.edit',$classement2->id)}}" class="btn btn-sm btn-primary mb-1">
@@ -95,7 +96,7 @@
 </a>
 
     </li>
-                                                          </div>
+                                                          
 @endforeach
 <a href="{{url('epreuve/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour à la liste</a>
   </ul>
