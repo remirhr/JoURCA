@@ -79,7 +79,7 @@ elseif($comp==3){
     @auth 
     <br>
     <div class="d-flex justify-content-center">
-  <a href="{{route('participant.create')}}" class="button-54">
+  <a href="{{route('participant.create')}}" class="button-34">
     Créer un participant
   </a>
   <p> </p>
@@ -89,7 +89,7 @@ elseif($comp==3){
 @endauth
 <div class="d-flex justify-content-center">
   <br>
-<a href="{{url('epreuve/')}}" class="button-red">Retour</a>
+<a href="{{url('epreuve/')}}" class="button-32">Retour</a>
                                                       </div>
 @endforeach
   </ul> 

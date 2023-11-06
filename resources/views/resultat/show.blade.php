@@ -44,5 +44,5 @@ elseif($comp==3){
 <strong>{{$resultat->NomEquipe}}</strong>
 {{$resultat->Slogan}}<br/>
 <p></p>
-<a href="{{url('resultat/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour aux résultats</a>
+<a href="{{url('resultat/')}}" class="button-32">Retour aux résultats</a>
 @endsection

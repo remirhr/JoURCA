@@ -109,7 +109,7 @@
     </li>
 @endforeach
 &nbsp;
-<a href="{{url('epreuve/')}}" class="button-34">Retour à la liste</a>
+<a href="{{url('epreuve/')}}" class="button-32">Retour à la liste</a>
   </ul>
   
 @endsection

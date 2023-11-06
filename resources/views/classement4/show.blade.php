@@ -7,6 +7,6 @@
 
 <strong>Slogan: </strong><p style="text-align:right; ">{{$classement4->equipe->Slogan }}</p>
 <br>
-<a href="{{url('classement4/')}}" class="btn btn-sm btn-primary mb-2 mr-2">Retour à la liste</a>
+<a href="{{url('classement4/')}}" class="button-32">Retour à la liste</a>
 
 @endsection

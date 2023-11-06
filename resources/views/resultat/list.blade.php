@@ -94,7 +94,7 @@ elseif($comp==3){
 @endauth
 <div class="d-flex justify-content-center">
   <br>
-<a href="{{url('epreuve/')}}" class="button-red">Retour</a>
+<a href="{{url('epreuve/')}}" class="button-32">Retour</a>
                                                       </div>
   </ul> 
 @endsection

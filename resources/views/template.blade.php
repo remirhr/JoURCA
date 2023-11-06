@@ -67,6 +67,34 @@
 .button-34:active {
   transform: translateY(-1px);
 }
+.button-32 {
+  padding: 1.3em 3em;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #E80024;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-32:hover {
+  background-color: #A30019;
+  /*
+  box-shadow: 0px 15px 20px rgba(186, 152, 34, 0.4);*/
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button-32:active {
+  transform: translateY(-1px);
+}
 
 @font-face {
     font-family: 'MaPolice2';
@@ -106,14 +134,14 @@ nav{
 }
 .hover{
   
-transition: 1s ease;
+transition: 0.3s ease;
 }
 
 .hover:hover{
 -webkit-transform: scale(1.1);
 -ms-transform: scale(1.1);
 transform: scale(1.1);
-transition: 1s ease;
+transition: 0.3s ease;
 }
 
 .button-54:active {

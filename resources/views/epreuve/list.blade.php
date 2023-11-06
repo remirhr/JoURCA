@@ -29,29 +29,29 @@
 @auth
 @can('admin')
    <!--btn btn-sm btn-primary mb-2 mr-2-->
-   <a href="{{url('resultat/')}}" class="button-54">
+   <a href="{{url('resultat/')}}" class="button-34">
     Equipes
   </a>
   @endcan
   @can('orga')
    <!--btn btn-sm btn-primary mb-2 mr-2-->
-   <a href="{{url('resultat/')}}" class="button-54">
+   <a href="{{url('resultat/')}}" class="button-34">
     Equipes
   </a>
   @endcan
   &nbsp;
   &nbsp;
-    <button type="submit" form="formLogout" class="button-red">
+    <button type="submit" form="formLogout" class="button-32">
       Déconnexion
     </button>
     &nbsp;
     @can('admin')
-  <a href="{{url('participant/')}}" class="button-54">
+  <a href="{{url('participant/')}}" class="button-34">
     Participants
   </a>
   @endcan
   @can('orga')
-  <a href="{{url('participant/')}}" class="button-54">
+  <a href="{{url('participant/')}}" class="button-34">
     Participants
   </a>
   @endcan
@@ -145,7 +145,7 @@
 @endforeach
 @auth
 @can('admin')
-<a href="{{url('register')}}" class="button-54">
+<a href="{{url('register')}}" class="button-34">
     Créer un login 
   </a>
   @endcan
