@@ -81,11 +81,11 @@
 
 &nbsp;
 
-<div class="col " style="display: flex; margin-bottom:30px;margin-left:20px; margin-right:20px; " >
-  <div class="hover" style="display: flex;">
-    <div class="card" style="display: flex;">
-      <img src="{{$epreuve->img}}" class="card-img-top" height="300px">
-      <div class="card-body">
+<div class="col " style="display: flex;border-radius:25px; margin-bottom:30px;margin-left:20px; margin-right:20px; " >
+  <div class="hover" style="display: flex; ">
+    <div class="card" style="display: flex;border-radius:25px;">
+      <img src="{{$epreuve->img}}" class="card-img-top" style="border-radius:25px;"height="300px">
+      <div class="card-body" style="border-radius:25px;">
           @if($epreuve->id == 1)
 <a href="{{url('classement1/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
 @elseif($epreuve->id == 2)
