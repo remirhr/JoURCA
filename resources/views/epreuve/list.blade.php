@@ -22,6 +22,7 @@
   </div>
 </div>
 &nbsp;
+
   
 <div class="d-flex justify-content-center">
   <span>
@@ -130,12 +131,12 @@
        
         @auth 
         @can('admin')
-        <a href="{{route('epreuve.edit',$epreuve->id)}}" class="btn btn-sm btn-primary mb-1">
+        <a href="{{route('epreuve.edit',$epreuve->id)}}" class="button-34">
         <i class="bi bi-vector-pen"></i>
 </a>
 @endcan
 @can('orga')
-        <a href="{{route('epreuve.edit',$epreuve->id)}}" class="btn btn-sm btn-primary mb-1">
+        <a href="{{route('epreuve.edit',$epreuve->id)}}" class="button-34">
         <i class="bi bi-vector-pen"></i>
 </a>
 @endcan

@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Résultat @endsection
+
 @section('content')
 <?php 
 $comp=$resultat->idComposante;
@@ -41,6 +41,7 @@ elseif($comp==3){
                                                         }
 ?>
 <i> <img src="../../{{$path}}" width="50" height="50" />  </i>
+
 <strong>{{$resultat->NomEquipe}}</strong>
 {{$resultat->Slogan}}<br/>
 <p></p>

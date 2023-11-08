@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Modifier une équipe @endsection
+
 @section('content')
 
 @if($errors->any())

@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Liste des équipes  @endsection
+
 @section('content')
 
   <ul class="list-group">

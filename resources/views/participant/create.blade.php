@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Création d'un participant @endsection
+
 @section('content')
 <form action="{{url('participant')}}" method="post">
 @csrf

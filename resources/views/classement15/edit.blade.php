@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Modifier un classement @endsection
+
 @section('content')
 
 @if($errors->any())

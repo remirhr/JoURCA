@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Modification du participant {{$participant->PrenomP}} {{$participant->NomP}} @endsection
+
 @section('content')
 
 @if($errors->any())

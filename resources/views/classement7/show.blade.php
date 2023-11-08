@@ -1,5 +1,4 @@
 @extends('template')
-@section('title')  Equipe numéro {{$classement7->id}} @endsection
 @section('content')
 
 <i></i>

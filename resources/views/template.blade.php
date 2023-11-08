@@ -12,13 +12,12 @@
   <div class="" style="margin-bottom:-10px;">
       <nav style="background-color:#12142B; border:-10px; margin-top:-10px;margin-bottom:-10px;" class="navbar navbar-expand-lg bg-body-tertiary">
   <div style="background-color:#12142B;margin-bottom:-10px;" class="container-fluid">
-  <a class="navbar-brand" href="https://www.univ-reims.fr/">
+  <a class="navbar-brand"  target='blank' href="https://www.univ-reims.fr/">
       <img src="img/Logo_republique.png" style="margin-left:5px; margin-top:5px;" width="95" height="84">
 
       <img src="img/univlogo.png"  width="285" height="54">
 </a>
-
-<a class="navbar-brand" href="https://www.univ-reims.fr/vie-des-campus/actualites/jeux-de-l-urca-2024,10227,18297.html?args=_1Q7ZDyTGr_aYnJ6eSkKbjvGobgYR4YHCAuoCjfmJHNdadljx7BZnq3LOLKoPSThBNGLhb8IlQCw%2AO54ubSfbq2Id1e74NSXx%2AaYxjKQeTPP2Ai0yh_z8lMdDXjVsBON">
+<a class="navbar-brand"  target='blank' href="https://www.univ-reims.fr/vie-des-campus/actualites/jeux-de-l-urca-2024,10227,18297.html?args=_1Q7ZDyTGr_aYnJ6eSkKbjvGobgYR4YHCAuoCjfmJHNdadljx7BZnq3LOLKoPSThBNGLhb8IlQCw%2AO54ubSfbq2Id1e74NSXx%2AaYxjKQeTPP2Ai0yh_z8lMdDXjVsBON">
       <img src="img/jeuxdelurcaclr-removebg-preview.png"  width="65" height="65">
       </a>
      
@@ -32,10 +31,52 @@
       <div stye="border-color:black; margin-top:-10px;margin:-10px;margin-bottom:-10px;" class="card mt-4">
         <div stye="border-color:black;margin-top:-10px; margin:-10px;margin-bottom:-10px;;" class="">@yield('title')</div>
         <div style="background-color:#12142B;margin:-10px;margin-bottom:-10px;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
+        &nbsp;
+        <footer class="text-center text-white" style="background-color:#12142B; margin: -15px;">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <div class="hover">
+      <a class="btn btn-outline-light btn-floating m-1"  target='blank'  href="https://www.univ-reims.fr/" role="button"
+        ><i class="bi bi-facebook"></i
+      ></a>
+
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" target='blank' href="https://twitter.com/universitereims" role="button"
+        ><i class="bi bi-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1"  target='blank' href="https://www.youtube.com/user/universitereims" role="button"
+        ><i class="bi bi-youtube"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1"  target='blank' href="https://www.instagram.com/universitereims/" role="button"
+        ><i class="bi bi-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1"   target='blank' href="https://www.linkedin.com/school/universite-de-reims-champagne-ardenne/?originalSubdomain=fr" role="button"
+        ><i class="bi bi-linkedin"></i
+      ></a>
+      </div>
+    
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+
+</footer>
+
+
       </div>
     </div>
    
-
 
     
     <style>
@@ -199,6 +240,9 @@ transition: 0.3s ease;
   touch-action: manipulation;
   
 }
+.footer{
+  background-color:#12142B; 
+}
 .button-view {
   background-image: url("img/blob.svg");
 }
@@ -208,6 +252,7 @@ body {
   background-size: auto;
 background-repeat: repeat-x;
 border-color:black;
+position: relative;
 }
 
 </style>  

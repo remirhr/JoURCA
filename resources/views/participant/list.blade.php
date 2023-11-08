@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Listes des participants @endsection
+
 @section('content')
 
 

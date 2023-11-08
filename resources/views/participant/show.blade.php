@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') {{$epreuve->title}} @endsection
+
 @section('content')
 
 <i> <img src="../{{$epreuve->img}}" width="50" height="50" /> </i>

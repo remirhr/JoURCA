@@ -1,5 +1,5 @@
 @extends('template')
-@section('title')  Equipe numéro {{$classement8->id}} @endsection
+
 @section('content')
 
 <i></i>

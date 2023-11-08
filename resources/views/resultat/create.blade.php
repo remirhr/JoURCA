@@ -1,5 +1,5 @@
 @extends('template')
-@section('title') Création d'une équipe @endsection
+
 @section('content')
 
 <form action="{{url('resultat')}}" method="post">
