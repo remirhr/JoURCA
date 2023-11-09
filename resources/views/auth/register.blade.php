@@ -65,6 +65,7 @@
                 <x-button class="ml-4">
                     {{ __('Créer un utilisateur') }}
                 </x-button>
+               
             </div>
         </form>
     </x-authentication-card>

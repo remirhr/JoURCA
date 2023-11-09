@@ -34,7 +34,7 @@
     <div class="offset-sm-2 col-sm-10">
       
     <button class="button-34" type="submit">Ajouter</button>
-    <a href="{{url('item')}}" class="button-32">Annuler</a>
+    <a href="{{url('epreuve/')}}" class="button-32">Annuler</a>
   </div>
 </form>
 @endsection

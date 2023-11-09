@@ -28,29 +28,12 @@
   <span>
    
 @auth
-@can('admin')
-   <!--btn btn-sm btn-primary mb-2 mr-2-->
-   <a href="{{url('resultat/')}}" class="button-34">
-    Equipes
-  </a>
-  @endcan
-  @can('orga')
-   <!--btn btn-sm btn-primary mb-2 mr-2-->
-   <a href="{{url('resultat/')}}" class="button-34">
-    Equipes
-  </a>
-  @endcan
-  &nbsp;
-  &nbsp;
+
     <button type="submit" form="formLogout" class="button-32">
       Déconnexion
     </button>
     &nbsp;
-    @can('admin')
-  <a href="{{url('participant/')}}" class="button-34">
-    Participants
-  </a>
-  @endcan
+    
   @can('orga')
   <a href="{{url('participant/')}}" class="button-34">
     Participants
@@ -77,16 +60,30 @@
   @csrf
 </form>
 &nbsp;
-<div stye="border-color:black; margin:5px;" class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
+<div stye="border-color:black; margin:5px; " class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
 @foreach($epreuveList as $epreuve)
 
 &nbsp;
 
 <div class="col " style="display: flex;border-radius:25px; margin-bottom:30px;margin-left:20px; margin-right:20px; " >
+
   <div class="hover" style="display: flex; ">
+  
     <div class="card" style="display: flex;border-radius:25px;">
+    @auth 
+        @can('admin')
+        <a href="{{route('epreuve.edit',$epreuve->id)}}"  class="button-34">
+        <i class="bi bi-vector-pen"></i>
+</a>
+@endcan
+@can('orga')
+        <a href="{{route('epreuve.edit',$epreuve->id)}}" class="button-34">
+        <i class="bi bi-vector-pen"></i>
+</a>
+@endcan
+@endauth
       <img src="{{$epreuve->img}}" class="card-img-top" style="border-radius:25px;"height="300px">
-      <div class="card-body" style="border-radius:25px;">
+      <div class="card-body" style="border-radius:25px; ">
           @if($epreuve->id == 1)
 <a href="{{url('classement1/')}}" style="color:white;" class="stretched-link ">Voir les résultats</a>
 @elseif($epreuve->id == 2)
@@ -125,22 +122,11 @@
         <h5 class="card-title" style="color:#FD411C; font-size:25px; "><strong>{{$epreuve->title}}</strong></h5>
         <p class="card-text">{{$epreuve->description}}</p>
       </div>
+      
 </div>
+
     </div>
   
-       
-        @auth 
-        @can('admin')
-        <a href="{{route('epreuve.edit',$epreuve->id)}}" class="button-34">
-        <i class="bi bi-vector-pen"></i>
-</a>
-@endcan
-@can('orga')
-        <a href="{{route('epreuve.edit',$epreuve->id)}}" class="button-34">
-        <i class="bi bi-vector-pen"></i>
-</a>
-@endcan
-@endauth
   </div>
 
 @endforeach

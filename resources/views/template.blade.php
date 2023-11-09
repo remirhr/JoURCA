@@ -16,6 +16,43 @@
       <img src="img/Logo_republique.png" style="margin-left:5px; margin-top:5px;" width="95" height="84">
       <img src="img/univlogo.png"  width="285" height="54">
 </a>
+
+
+<ul>
+
+  <li>
+    @auth
+    @can('admin')
+
+  <a href="{{url('register')}}" class="button-35" >Creer un login</a>
+
+  <a href="{{url('participant/')}}"class="button-35">
+    Participants
+  </a>
+
+  <a href="{{url('resultat/')}}" class="button-35">
+    Equipes
+  </a>
+
+  @endcan
+
+  @can('orga')
+  <a href="{{url('participant/')}}"class="button-35">
+    Participants
+  </a>
+
+  <a href="{{url('resultat/')}}" class="button-35">
+    Equipes
+  </a>
+
+  @endcan
+  @endauth
+  </li>
+
+
+</ul>
+
+
 <a class="navbar-brand"  target='blank' href="https://www.univ-reims.fr/vie-des-campus/actualites/jeux-de-l-urca-2024,10227,18297.html?args=_1Q7ZDyTGr_aYnJ6eSkKbjvGobgYR4YHCAuoCjfmJHNdadljx7BZnq3LOLKoPSThBNGLhb8IlQCw%2AO54ubSfbq2Id1e74NSXx%2AaYxjKQeTPP2Ai0yh_z8lMdDXjVsBON">
       <img src="img/jeuxdelurcaclr-removebg-preview.png"  width="65" height="65">
       </a>
@@ -39,7 +76,7 @@
       <div class="hover">
       <a class="btn btn-outline-light btn-floating m-1"  target='blank'  href="https://www.univ-reims.fr/" role="button"
         ><i class="bi bi-facebook"></i
-      ></a>
+      ></a> 
 
 
       <!-- Twitter -->
@@ -104,6 +141,43 @@
 }
 
 .button-34:active {
+  transform: translateY(-1px);
+}
+
+
+.button-35 {
+
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #F2C52C;
+ margin-left: 75px;
+  margin-top:15px;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  
+
+
+}
+
+.button-35:hover {
+  
+  /*
+  box-shadow: 0px 15px 20px rgba(186, 152, 34, 0.4);*/
+  color: #fff;
+  transform: translateY(-7px);
+  -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+transition: 0.3s ease;
+}
+
+.button-35:active {
   transform: translateY(-1px);
 }
 .button-32 {
