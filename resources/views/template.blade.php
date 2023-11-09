@@ -18,7 +18,7 @@
 </a>
 
 
-<ul>
+<ul >
 
   <li>
     @auth
@@ -146,21 +146,22 @@
 
 
 .button-35 {
-
+padding : 1.5em 1.5em;
+background-color: transparent;
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #F2C52C;
- margin-left: 75px;
+ margin-left: 105px;
   margin-top:15px;
   border: none;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  
+
 
 
 }

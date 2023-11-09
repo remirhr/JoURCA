@@ -60,28 +60,19 @@
   @csrf
 </form>
 &nbsp;
+
 <div stye="border-color:black; margin:5px; " class="row row-cols-1 row-cols-md-4 g-4 d-flex justify-content-center">
 @foreach($epreuveList as $epreuve)
 
 &nbsp;
+
 
 <div class="col " style="display: flex;border-radius:25px; margin-bottom:30px;margin-left:20px; margin-right:20px; " >
 
   <div class="hover" style="display: flex; ">
   
     <div class="card" style="display: flex;border-radius:25px;">
-    @auth 
-        @can('admin')
-        <a href="{{route('epreuve.edit',$epreuve->id)}}"  class="button-34">
-        <i class="bi bi-vector-pen"></i>
-</a>
-@endcan
-@can('orga')
-        <a href="{{route('epreuve.edit',$epreuve->id)}}" class="button-34">
-        <i class="bi bi-vector-pen"></i>
-</a>
-@endcan
-@endauth
+   
       <img src="{{$epreuve->img}}" class="card-img-top" style="border-radius:25px;"height="300px">
       <div class="card-body" style="border-radius:25px; ">
           @if($epreuve->id == 1)
@@ -126,17 +117,27 @@
 </div>
 
     </div>
-  
+    @auth 
+        @can('admin')
+        <a href="{{route('epreuve.edit',$epreuve->id)}}" style="height:auto; width:3px;text-align:center;margin-bottom:150px ;margin-left:10px;margin-top:150px;vertical-align:middle;  writing-mode: vertical-rl;
+  text-orientation: sideways;"  class="button-35">
+        <span>Modifier </span>
+        <i class="bi bi-vector-pen"></i>
+</a>
+@endcan
+@can('orga')
+        <a href="{{route('epreuve.edit',$epreuve->id)}}" style="height:auto; width:3px;text-align:center;margin-bottom:150px ;margin-left:10px;margin-top:150px;vertical-align:middle;  writing-mode: vertical-rl;
+  text-orientation: sideways;"  class="button-35">
+          <span>Modifier </span>
+        <i class="bi bi-vector-pen"></i>
+</a>
+@endcan
+@endauth
   </div>
 
 @endforeach
-@auth
-@can('admin')
-<a href="{{url('register')}}" class="button-34">
-    Créer un login 
-  </a>
-  @endcan
-  @endauth
+
+  
   &nbsp;
   
   
