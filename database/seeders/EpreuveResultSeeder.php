@@ -38,12 +38,12 @@ class EpreuveResultSeeder extends Seeder
                     [
               'title' => 'Handball 6/6',
               'description' => "Lundi 12 février de 18h à 22h, 8 équipes de 6 s'affronteront dans le GU (plateau C) CAMPUS MDH. Pas de tribunes disponibles",
-              'img' => 'img/handball2.jpg'
+              'img' => 'img/handball2.svg'
         ],
         [
               'title' => 'Sumo',
               'description' => "Lundi 12 février de 18h à 22h, 6 équipes de 6 s'affronteront en salle de crossfit CAMPUS MDH.                             ",
-              'img' => 'img/sumo3.png'
+              'img' => 'img/sumo3.svg'
         ],
         [
             'title' => 'Touch Rugby 4/4',

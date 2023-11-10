@@ -4,6 +4,7 @@
     <title>Jeux de l'URCA 2024</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/justU.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style1.css">
@@ -13,14 +14,15 @@
       <nav style="background-color:#12142B; border:-10px; margin-top:-10px;margin-bottom:-10px;" class="navbar navbar-expand-lg bg-body-tertiary">
   <div style="background-color:#12142B;margin-bottom:-10px;" class="container-fluid">
   <a class="navbar-brand"  target='blank' href="https://www.univ-reims.fr/">
-      <img src="img/Logo_republique.png" style="margin-left:5px; margin-top:5px;" width="95" height="84">
-      <img src="img/univlogo.png"  width="285" height="54">
+      <img src="img/Logo_republique.png" class ="logorepu"style="margin-left:5px; margin-top:5px;" width="85" height="84">
+      <img src="img/univlogo.png" class="logouniv"style="margin-top:-20px;" width="270" height="54">
 </a>
 
 
 <ul >
 
   <li>
+ 
     @auth
     @can('admin')
 
@@ -54,13 +56,78 @@
 
 
 <a class="navbar-brand"  target='blank' href="https://www.univ-reims.fr/vie-des-campus/actualites/jeux-de-l-urca-2024,10227,18297.html?args=_1Q7ZDyTGr_aYnJ6eSkKbjvGobgYR4YHCAuoCjfmJHNdadljx7BZnq3LOLKoPSThBNGLhb8IlQCw%2AO54ubSfbq2Id1e74NSXx%2AaYxjKQeTPP2Ai0yh_z8lMdDXjVsBON">
-      <img src="img/jeuxdelurcaclr-removebg-preview.png"  width="65" height="65">
+      <img src="img/justU.png"  width="65" height="65">
       </a>
      
 </div>
   
 </nav>
     </div>
+    <section class="countdown-container" style="color:#fff;text-align:center; margin-top:15px;margin-left: auto;
+    margin-right: auto;">
+
+  <div class="days-container"  style="color:#fff;text-align:center; margin-top:15px;">
+    <div class="days" id="days"></div>
+    
+    <div class="days-label">jours</div>
+  </div>
+  
+  <div class="hours-container"  style="color:#fff;text-align:center; margin-top:15px;">
+    <div class="hours" id="hours"></div>
+    
+    <div class="hours-label">heures</div>
+  </div>
+  
+  <div class="minutes-container"  style="color:#fff;text-align:center; margin-top:15px;">
+    <div class="minutes" id="minutes"></div>
+    
+    <div class="minutes-label">minutes</div>
+  </div>
+  
+  <div class="seconds-container"  style="color:#fff;text-align:center; margin-top:15px;">
+    <div class="seconds"id="seconds"></div>
+   
+    <div class="seconds-label">secondes</div>
+  </div>
+
+</section>
+    
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 12, 2024 18:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("days").innerHTML = days ;
+  document.getElementById("hours").innerHTML = hours  ;
+  document.getElementById("minutes").innerHTML = minutes ;
+  document.getElementById("seconds").innerHTML = seconds ;
+    
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("days").innerHTML = "EXPIRED";
+    document.getElementById("hours").innerHTML = "EXPIRED";
+    document.getElementById("minutes").innerHTML = "EXPIRED";
+    document.getElementById("seconds").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 
     <div stye="border-color:black; margin-top:-10px;margin:-10px;margin-bottom:-10px;" class="container">
       <div stye="border-color:black; margin-top:-10px;margin:-10px;margin-bottom:-10px;" class="card mt-4">
@@ -130,6 +197,68 @@
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+}
+@media (max-width: 800px) {
+  
+  .countdown-container {
+    max-width: 90%;
+  }
+  
+  .days-container,
+  .hours-container,
+  .minutes-container, 
+  .seconds-container {
+    font-size: 0.8em;
+    width: 100px;
+    height: 100px;
+  }
+}
+.countdown-container {
+  display: flex;
+  width: 100%;
+  max-width: 70%;
+  justify-content: space-between;
+}
+
+.days-container,
+.hours-container,
+.minutes-container, 
+.seconds-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.1);
+  border: 5px solid rgba(255,255,255,0.3);
+  width: 140px;
+  height: 140px;
+  border-radius: 99px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  font-size: 2.5em; 
+  margin: 10px 0;
+}
+
+
+.days-label,
+.hours-label,
+.minutes-label,
+.seconds-label {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.nav {
+
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
 }
 
 .button-34:hover {
@@ -326,6 +455,17 @@ body {
 background-repeat: repeat-x;
 border-color:black;
 position: relative;
+}
+@media (max-width:600px) {
+  .logorepu {
+   height: 35;
+   width:35 ;
+  }
+
+.logouniv {
+  height: 35;
+   width:125 ;
+}
 }
 
 </style>  

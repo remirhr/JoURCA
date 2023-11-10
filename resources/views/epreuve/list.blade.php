@@ -9,6 +9,7 @@
   crossorigin="anonymous"></script>
 <script src="{{asset('storage/js/categories.js')}}"></script>
 @endsection
+
 <form id="formLogout" action="{{url('/logout')}}" method="POST">
   @csrf
 </form>
@@ -34,11 +35,7 @@
     </button>
     &nbsp;
     
-  @can('orga')
-  <a href="{{url('participant/')}}" class="button-34">
-    Participants
-  </a>
-  @endcan
+
 
 
 
