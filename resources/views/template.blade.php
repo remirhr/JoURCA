@@ -15,19 +15,21 @@
   <div style="background-color:#12142B;margin-bottom:-10px;" class="container-fluid">
   <a class="navbar-brand"  target='blank' href="https://www.univ-reims.fr/">
   <img src="img/justU.png" class="justUFirst" style="margin-top : 15px;" width="65" height="65">
+  
+
       <img src="img/Logo_republique.png" class ="logorepu"style="margin-left:5px; margin-top:5px;" width="85" height="84">
       <img src="img/univlogo.png" class="logounive"style="margin-top:-20px;" width="270" height="54">
 </a>
 
 
-<ul >
+<ul class="ulforlinks" >
 
-  <li>
+  <li >
  
     @auth
     @can('admin')
 
-  <a href="{{url('register')}}" class="button-35" >Creer un login</a>
+  <a href="{{url('register')}}" class="button-35" >Login</a>
 
   <a href="{{url('participant/')}}"class="button-35">
     Participants
@@ -200,19 +202,23 @@ var x = setInterval(function() {
   cursor: pointer;
   outline: none;
 }
-@media (max-width: 800px) {
+@media (width < 800px) {
   
   .countdown-container {
-    max-width: 90%;
+    max-width: 80%;
+    
   }
   
   .days-container,
   .hours-container,
   .minutes-container, 
   .seconds-container {
-    font-size: 0.8em;
-    width: 100px;
-    height: 100px;
+    font-size: 0.6em;
+    width: 50px;
+    height: 50px;
+  
+  border-radius: 99px;
+   
   }
 }
 .countdown-container {
@@ -339,7 +345,9 @@ transition: 0.3s ease;
 .button-32:active {
   transform: translateY(-1px);
 }
-
+.ulforlinks2 {
+  display:none;
+}
 @font-face {
     font-family: 'MaPolice2';
     src: url('/public/fonts/quicksand/Quicksand-Regular.ttf') format('ttf');
@@ -479,7 +487,7 @@ position: relative;
   display : none;
   }
 .countdown-container{
-  display: none;
+ 
 }
 .logounive  {
   display :none;
@@ -492,6 +500,32 @@ position: relative;
   display : inline;
   
 }
+.ulforlinks{
+  position: absolute;
+top: 20px;
+ left : 70px;
+}
+.button-54 {
+    padding: 0.25em 0.75em;
+  }
+  .button-53 {
+    padding: 0.25em 0.75em;
+  }
+  .button-red {
+    padding: 0.25em 0.75em;
+  }
+  .button-32{
+    padding: 1.3em 3em;
+    font-size: 11px;
+  }
+  .button-35{
+    padding: 1.5em 1.5em;
+    font-size: 11px;
+  }
+  .button-34 {
+    font-size: 11px;
+    padding: 1em 2.7em;
+  }
 
 
 }
