@@ -18,6 +18,7 @@
 
   
 <div class="d-flex justify-content-center">
+
   <span>
    
 @auth

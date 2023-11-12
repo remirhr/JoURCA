@@ -133,7 +133,8 @@ var x = setInterval(function() {
     <div stye="border-color:black; margin-top:-10px;margin:-10px;margin-bottom:-10px;" class="container">
       <div stye="border-color:black; margin-top:-10px;margin:-10px;margin-bottom:-10px;" class="card mt-4">
         <div stye="border-color:black;margin-top:-10px; margin:-10px;margin-bottom:-10px;;" class="">@yield('title')</div>
-        <div style="background-color:#12142B;margin:-10px;margin-bottom:-10px;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')</div>
+        <div style="background-color:#12142B;margin:-10px;margin-bottom:-10px;  border-color:black; color:aliceblue; font-size:18px;" class="card-body">@yield('content')
+       
         &nbsp;
         <footer class="text-center text-white" style="background-color:#12142B; margin: -15px;">
   <!-- Grid container -->
@@ -477,29 +478,22 @@ position: relative;
   .logorepu {
   display : none;
   }
-
+.countdown-container{
+  display: none;
+}
 .logounive  {
   display :none;
 }
-.navbar navbar-expand-lg bg-body-tertiary{
-  height :auto;
-  width :auto;
-}
+
 .justU {
   display :none;
 }
 .justUFirst {
-  display : block;
+  display : inline;
+  
 }
-.navbar-brand {
-    width: 80px;
-    height : 20px;
-    
-}
-.nav  {
-  width: 80px;
-    height : 20px;
-}
+
+
 }
 
 </style>  

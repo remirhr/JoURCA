@@ -74,7 +74,13 @@
 
         <img src="{{$pathimg}}" width="50" height="50"/>
         <strong>{{$classement1->equipe->NomEquipe}}</strong>
-        {{$classement1->equipe->Slogan}}
+        @if(strlen($classement1->equipe->Slogan) > 50)
+          {{substr($classement1->equipe->Slogan, 0, 50)}}...
+        @else
+          {{$classement1->equipe->Slogan}}
+        @endif
+
+       
       
       </div>      
       <div class="col text-end">

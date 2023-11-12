@@ -72,7 +72,11 @@
         ?>
         <img src="{{$pathimg}}" width="50" height="50"/>
         <strong>{{$classement9->equipe->NomEquipe}}</strong>
-        {{$classement9->equipe->Slogan}}
+        @if(strlen($classement9->equipe->Slogan) > 50)
+          {{substr($classement9->equipe->Slogan, 0, 50)}}...
+        @else
+          {{$classement9->equipe->Slogan}}
+        @endif
       </div>         
       <div class="col text-end">
         <a href="{{route('classement9.show', $classement9->id)}}" class="stretched-link"></a>
