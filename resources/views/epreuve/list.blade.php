@@ -13,15 +13,7 @@
 <form id="formLogout" action="{{url('/logout')}}" method="POST">
   @csrf
 </form>
-<div class="d-flex justify-content-center">
-  <div class="row">
-    <div class="offset-sm-3 col-sm-6 mb-3 rounded border border-secondary">
-      <strong id="title"></strong><br/>
-      <img id="img" height="50px" width="50px">
-    
-    </div>
-  </div>
-</div>
+
 &nbsp;
 
   

@@ -14,8 +14,9 @@
       <nav style="background-color:#12142B; border:-10px; margin-top:-10px;margin-bottom:-10px;" class="navbar navbar-expand-lg bg-body-tertiary">
   <div style="background-color:#12142B;margin-bottom:-10px;" class="container-fluid">
   <a class="navbar-brand"  target='blank' href="https://www.univ-reims.fr/">
+  <img src="img/justU.png" class="justUFirst" style="margin-top : 15px;" width="65" height="65">
       <img src="img/Logo_republique.png" class ="logorepu"style="margin-left:5px; margin-top:5px;" width="85" height="84">
-      <img src="img/univlogo.png" class="logouniv"style="margin-top:-20px;" width="270" height="54">
+      <img src="img/univlogo.png" class="logounive"style="margin-top:-20px;" width="270" height="54">
 </a>
 
 
@@ -56,7 +57,7 @@
 
 
 <a class="navbar-brand"  target='blank' href="https://www.univ-reims.fr/vie-des-campus/actualites/jeux-de-l-urca-2024,10227,18297.html?args=_1Q7ZDyTGr_aYnJ6eSkKbjvGobgYR4YHCAuoCjfmJHNdadljx7BZnq3LOLKoPSThBNGLhb8IlQCw%2AO54ubSfbq2Id1e74NSXx%2AaYxjKQeTPP2Ai0yh_z8lMdDXjVsBON">
-      <img src="img/justU.png"  width="65" height="65">
+      <img src="img/justU.png" class="justU" width="65" height="65">
       </a>
      
 </div>
@@ -286,7 +287,6 @@ background-color: transparent;
  margin-left: 105px;
   margin-top:15px;
   border: none;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
@@ -392,6 +392,9 @@ transition: 0.3s ease;
   top: 5px;
   left: 5px;
 }
+.justUFirst {
+    display : none;
+  }
 .button-red {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -414,6 +417,20 @@ transition: 0.3s ease;
   box-shadow: 0px 0px 0px 0px;
   top: 5px;
   left: 5px;
+}
+@media (width < 1000) {
+  .justUFirst {
+    display :none;
+  }
+}
+@media (width > 1000 and width < 1400 and height > 768 and heigth < 1000) {
+  .justU {
+    diplay :none;
+
+  }
+  .justUFirst {
+    display : none;
+  }
 }
 @media (min-width: 768px) {
   .button-54 {
@@ -456,15 +473,32 @@ background-repeat: repeat-x;
 border-color:black;
 position: relative;
 }
-@media (max-width:600px) {
+@media (width < 800px) {
   .logorepu {
-   height: 35;
-   width:35 ;
+  display : none;
   }
 
-.logouniv {
-  height: 35;
-   width:125 ;
+.logounive  {
+  display :none;
+}
+.navbar navbar-expand-lg bg-body-tertiary{
+  height :auto;
+  width :auto;
+}
+.justU {
+  display :none;
+}
+.justUFirst {
+  display : block;
+}
+.navbar-brand {
+    width: 80px;
+    height : 20px;
+    
+}
+.nav  {
+  width: 80px;
+    height : 20px;
 }
 }
 
