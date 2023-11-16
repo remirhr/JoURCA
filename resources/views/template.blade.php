@@ -433,9 +433,9 @@ transition: 0.3s ease;
     display :none;
   }
 }
-@media (width > 1000 and width < 1400 and height > 768 and heigth < 1000) {
+@media (width > 1000) and (width < 1400) and (height > 768) and (heigth < 1000) {
   .justU {
-    diplay :none;
+    display: none;
 
   }
   .justUFirst {
@@ -487,9 +487,7 @@ position: relative;
   .logorepu {
   display : none;
   }
-.countdown-container{
- 
-}
+
 .logounive  {
   display :none;
 }
