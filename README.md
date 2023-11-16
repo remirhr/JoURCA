@@ -34,25 +34,26 @@ Suivez ces étapes pour installer le projet localement :
 1. Clonez ce dépôt sur votre machine :
 
 ```bash
-git clone https://github.com/votre-utilisateur/jeux-olympiques-urca.git
+git clone https://github.com/votre-utilisateur/JoURCA.git
 ```
 
 2. Accédez au répertoire du projet :
 
 ```bash
-cd jeux-olympiques-urca
+cd JoURCA
 ```
 
 3. Installez les dépendances PHP avec Composer :
 
 ```bash
-composer install
+composer install ou composer install --ignore-platform-reqs
 ```
 
 4. Installez les dépendances JavaScript avec npm :
 
 ```bash
 npm install
+npm build
 ```
 
 5. Copiez le fichier `.env.example` en `.env` et configurez les variables d'environnement, notamment la configuration de la base de données.
@@ -61,12 +62,14 @@ npm install
 
 ```bash
 php artisan key:generate
+
+php artisan storage:link
 ```
 
 7. Exécutez les migrations de base de données :
 
 ```bash
-php artisan migrate
+php artisan migrate --seed 
 ```
 
 8. Démarrez le serveur de développement :
@@ -75,18 +78,5 @@ php artisan migrate
 php artisan serve
 ```
 
-L'application sera accessible à l'adresse [http://localhost:8000](http://localhost:8000).
 
-## Contribution
-
-Nous encourageons les contributions à ce projet. Si vous souhaitez contribuer, veuillez suivre ces étapes :
-
-1. Clonez le projet sur votre compte GitHub.
-2. Créez une nouvelle branche pour votre fonctionnalité ou votre correctif : `git checkout -b ma-nouvelle-fonctionnalite`.
-3. Faites vos modifications et testez-les.
-4. Soumettez une demande de fusion (Pull Request) vers la branche principale du projet.
-
-## Licence
-
-Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus d'informations.
 
